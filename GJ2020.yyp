@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "49ce12b6-f5d6-4b01-88e5-dbcb663c0ccc",
+            "Value": {
+                "id": "edd2739a-7b3d-42b8-b844-7e53dc634760",
+                "resourcePath": "objects\\oOilFoam\\oOilFoam.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4b45a877-6fb9-48b9-af2c-5ee2301abc01",
             "Value": {
                 "id": "7c73baa0-3bbd-409d-8a19-b565da5d93b1",

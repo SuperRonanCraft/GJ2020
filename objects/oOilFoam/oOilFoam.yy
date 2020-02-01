@@ -1,18 +1,28 @@
 {
-    "id": "0541b51c-b66d-40f7-abb5-922eec274c67",
+    "id": "49ce12b6-f5d6-4b01-88e5-dbcb663c0ccc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oWall",
+    "name": "oOilFoam",
     "eventList": [
         {
-            "id": "5ee80e5a-24f3-442e-b959-846a6d512109",
+            "id": "fc621ab7-507d-4dee-82bb-7a5be2631a32",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0541b51c-b66d-40f7-abb5-922eec274c67"
+            "m_owner": "49ce12b6-f5d6-4b01-88e5-dbcb663c0ccc"
+        },
+        {
+            "id": "cce64612-ee67-463b-9120-8c67377a93b3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "49ce12b6-f5d6-4b01-88e5-dbcb663c0ccc"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,23 +41,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "db12f8ea-fa79-47d9-a2ce-6b20eea4507e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "walkable",
-            "varType": 3
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "e88aa25d-5357-4c46-b85a-1f80bfb4511c",
+    "spriteId": "f1f3de5a-556d-4f7d-80cd-3ba3b1b72042",
     "visible": true
 }
