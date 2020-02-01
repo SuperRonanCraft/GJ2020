@@ -263,6 +263,22 @@
             }
         },
         {
+            "Key": "5e26879e-8bd5-4998-a0f7-9e488dc6fb46",
+            "Value": {
+                "id": "a2133834-7680-4eb0-8de3-ffcac2960053",
+                "resourcePath": "sprites\\sp_foam3\\sp_foam3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5e5344ae-ba24-4ca8-8dd0-49fdc7dc346e",
+            "Value": {
+                "id": "d0a7c14a-66f6-470b-a432-821159bc1dc5",
+                "resourcePath": "objects\\oFoam\\oFoam.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "629e7bea-6edd-4695-8e76-70aed14f0001",
             "Value": {
                 "id": "a8304ac5-b085-4add-a532-4a2a4ad0445a",
