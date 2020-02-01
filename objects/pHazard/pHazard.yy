@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "59ed7b84-561e-4e04-99d3-809f0169dcf9"
+        },
+        {
+            "id": "d99b2c2c-8883-414a-91da-8d71b358f9d1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "59ed7b84-561e-4e04-99d3-809f0169dcf9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -101,6 +111,20 @@
             "value": "c_yellow",
             "varName": "hazard_color",
             "varType": 4
+        },
+        {
+            "id": "850d54f4-0c79-4c99-bf39-1ed4b7d9798f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "damage_do",
+            "varType": 3
         }
     ],
     "solid": false,
