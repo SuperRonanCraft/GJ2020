@@ -32,6 +32,19 @@ if(!isFloor){
 	lifeTime--;
 }
 
+if(isFloor){
+	if(instance_place(x,y,oHazardFire) != noone){
+		instance_create_depth(x,y,depth-1,oHazardFire);
+		for (var i = 0; i < irandom_range(1,4); i++) {    
+			instance_create_depth(x,y-10,depth-1,oSmoke);
+		}
+		part_emitter_region(global.ParticleSystem1,global.Emitter1,bbox_left,bbox_right,y-10,y+10,ps_shape_ellipse,ps_distr_gaussian);
+		part_emitter_burst(global.ParticleSystem1,global.Emitter1,oParticleHandler.ds_part[?PARTICLES.OIL],5);	
+
+		instance_destroy(self,true);
+	}
+}
+
 if(lifeTime < 0){
 	instance_destroy();	
 }
