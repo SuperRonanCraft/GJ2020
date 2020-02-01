@@ -14,3 +14,5 @@ fire_size_max = 1.5;
 fire_size_change = 0.02;
 //PARTICLE!!!! //fire_part = ;
 fire_part_amt = 1.5;
+
+extinguished = false;

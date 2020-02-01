@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "92a7dd9b-baac-43db-9073-72ead08ef51e",
+            "Value": {
+                "id": "646accf2-8719-4c75-9130-d8f2e6436761",
+                "resourcePath": "sprites\\sp_extinguishedSmoke\\sp_extinguishedSmoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "95586f1f-f258-4f45-8315-aec50e1786b1",
             "Value": {
                 "id": "a95b59a0-e882-4fd5-a02f-73999628d1b3",
