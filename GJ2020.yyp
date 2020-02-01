@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "7213e5eb-e23c-4183-987b-a7ca64ca7105",
+            "Value": {
+                "id": "da912c1e-4b15-4913-91eb-be9ae1849523",
+                "resourcePath": "sprites\\sPlayer_walking\\sPlayer_walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "723c23aa-b978-4298-8fa0-184a51d712e5",
             "Value": {
                 "id": "0a83255e-98bf-4da7-bcc5-0936566ab0e6",

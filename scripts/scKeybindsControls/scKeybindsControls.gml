@@ -1,7 +1,7 @@
 /// @desc keyboard-controls
 var key_left = keyboard_check(keyleft); 
 var key_right = keyboard_check(keyright);
-//var key_jump = keyboard_check_pressed(keyjump);
+var key_jump = keyboard_check_pressed(keyjump);
 //var key_shoot = keyboard_check(keyshoot);
 
 
