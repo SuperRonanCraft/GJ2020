@@ -1,7 +1,7 @@
 /// @desc Game has started
 global.play = true;
 
-timer_max = 120; //New time
+timer_max = 500; //New time
 timer = timer_max;
 game_shield = 100;
 game_health = 1000;

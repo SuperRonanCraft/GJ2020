@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "4e90ea15-b96d-4dc2-b0f1-3b785b5fbbd7",
+            "Value": {
+                "id": "20225456-bbc3-4188-84f8-6bfa6def5797",
+                "resourcePath": "sprites\\sEnemy_Fly\\sEnemy_Fly.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5238e325-fb37-4c36-b216-e884eaababf9",
             "Value": {
                 "id": "68078e49-18f3-4da9-917a-009be0b33c3b",
@@ -308,6 +316,14 @@
                 "id": "d0a7c14a-66f6-470b-a432-821159bc1dc5",
                 "resourcePath": "objects\\oFoam\\oFoam.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "619934ce-ef29-4051-9bef-e5f71b35c061",
+            "Value": {
+                "id": "c2fbf41e-2421-44f7-9e46-e6c7839b201e",
+                "resourcePath": "sprites\\sChar_Med\\sChar_Med.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -479,6 +495,14 @@
             }
         },
         {
+            "Key": "9fedf041-dfc5-4a70-b8f4-ea496a1f3dd7",
+            "Value": {
+                "id": "f747d33e-bf6f-40ef-955a-2bd560d6e97c",
+                "resourcePath": "sprites\\spDrone\\spDrone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a42fdb80-18d2-46e1-a3f3-80f9635f5aef",
             "Value": {
                 "id": "15e3aeab-a401-40fb-8987-889452f6e8fc",
@@ -524,6 +548,14 @@
                 "id": "10362727-93e2-429f-9d88-f310c842be6a",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aac48f55-7b9c-4211-95dc-49da6db830ee",
+            "Value": {
+                "id": "d3131721-f3dd-4b51-9d1d-e1717073e8c5",
+                "resourcePath": "sprites\\sEnemy_Grn\\sEnemy_Grn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -671,6 +703,14 @@
             }
         },
         {
+            "Key": "e0952639-5b33-40d7-8d55-d97bc264d34d",
+            "Value": {
+                "id": "b5debb5b-a916-4721-85df-1cf2f1321d09",
+                "resourcePath": "objects\\oDrone\\oDrone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e10ba0ae-9484-4666-8bdc-7a78f75796dd",
             "Value": {
                 "id": "d7b324a8-5e14-47b6-9b28-591440efb814",
@@ -724,6 +764,22 @@
                 "id": "6e0edfda-3bfe-443d-a180-42d6a5569a02",
                 "resourcePath": "sprites\\sFire3\\sFire3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eb2a38af-9aa3-4264-a5ef-2ae852ec7c90",
+            "Value": {
+                "id": "a4ba9ba3-26c8-4ef9-b54d-d994f6112daa",
+                "resourcePath": "objects\\oRepairStation\\oRepairStation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "edf75c4e-aa30-4463-8111-148e1fd81e89",
+            "Value": {
+                "id": "b63674a8-49df-4d64-b469-8cd0a1d96e12",
+                "resourcePath": "objects\\oGrid\\oGrid.yy",
+                "resourceType": "GMObject"
             }
         },
         {
