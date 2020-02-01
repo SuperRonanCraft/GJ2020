@@ -9,5 +9,18 @@ if(!itemEquipped){
 	
 	hsp = lerp(hsp,0,0.1);
 }
+
+else{
+
+
+	if(keyboard_check(ord("S"))){
+		show_debug_message("spraying");
+		var foam = instance_create_depth(x+(25*oPlayer.facing), y,depth+1,oFoam);
+		foam.hsp = oPlayer.facing * irandom_range(5,10);
+	}
+	
+}
+
+
 standing = scCollisionOPlayer();
 scMove();

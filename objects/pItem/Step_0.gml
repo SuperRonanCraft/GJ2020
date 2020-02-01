@@ -43,5 +43,6 @@ else{
 
 if(itemEquipped){
 	x = oPlayer.x;
-	y = oPlayer.y-50;
+	y = oPlayer.y-25;
+	image_xscale = oPlayer.facing;
 }
