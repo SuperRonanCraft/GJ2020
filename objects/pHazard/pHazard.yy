@@ -87,6 +87,20 @@
             "value": "FIRE BREACH",
             "varName": "hazard_text",
             "varType": 2
+        },
+        {
+            "id": "17be64e1-3bc2-406f-840e-9a73a50c55fd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "c_yellow",
+            "varName": "hazard_color",
+            "varType": 4
         }
     ],
     "solid": false,

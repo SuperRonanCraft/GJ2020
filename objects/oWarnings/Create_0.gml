@@ -6,7 +6,7 @@ warning_alpha_change = 0.02;
 //warning_stick_len = 100;
 warning_scale = 0.8;
 warning_scale_text = 0.5;
-warning_line_color = c_white;
+warning_line_color = c_red;
 warning_line_width = 2;
 
 /*var warn = ds_map_create();
@@ -24,5 +24,9 @@ enum WARNING_TYPE {
 }
 
 enum WARNING_MAP {
-	TYPE, X, Y, TEXT, ALPHA, ALPHA_FADING
+	TYPE, LOC_LIST, 
+	PERCENT_LINE_LOC,
+	PERCENT_LINE,
+	ALPHA_LINE,
+	COLOR, TEXT, ALPHA, ALPHA_FADING
 }

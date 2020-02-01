@@ -4,25 +4,19 @@
 //Particles
 global.ParticleSystem1 = part_system_create();
 part_system_depth(global.ParticleSystem1, 102);
-
 global.Emitter1 = part_emitter_create(global.ParticleSystem1);
 
 //Initiate
 ds_part = ds_map_create();
-ds_part_amt = ds_map_create();
-var spd = 0.5;
-var life = 2;
-var amt = 1;
 
-/*var parttype = part_type_create();
-part_type_sprite(parttype, s_pwinter, false, false, false);
+var parttype = part_type_create();
+part_type_sprite(parttype, sParticleFlame, false, false, false);
 part_type_size(parttype, 0.1, 1, -0.05, 0);
 part_type_direction(parttype, 270, 270, 0, 0);
-part_type_speed(parttype, 0.5 * spd, 1 * spd, 0.1 * spd, 0);
-ds_map_add(ds_part, PARTICLES.WINTER, parttype);
-ds_map_add(ds_part_amt, PARTICLES.WINTER, 2 * amt);
+part_type_speed(parttype, 0.5, 1, 0.1, 0);
+ds_map_add(ds_part, PARTICLES.FIRE, parttype);
 
-parttype = part_type_create();
+/*parttype = part_type_create();
 part_type_sprite(parttype, s_pice, false, false, true);
 part_type_size(parttype, 0.3, 0.5, 0, 0);
 part_type_direction(parttype, 0, 360, 0, 0);
