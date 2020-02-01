@@ -2,7 +2,7 @@
 
 var offset = 1;
 
-var touchingx = instance_place(x + hsp, y, oWallPlayer); //get the instance of the wall in the future in the horizontal
+var touchingx = instance_place(x + hsp, y, oWall); //get the instance of the wall in the future in the horizontal
 if (touchingx != noone){ //If touching a wall in the horizontal 
 	//Normal wall collision
 	if (hsp > 0) { //Going Right
@@ -15,7 +15,7 @@ if (touchingx != noone){ //If touching a wall in the horizontal
 	
 }
 
-var touchingy = instance_place(x, y + vsp, oWallPlayer); //get the instance of the wall in the future in the vertical
+var touchingy = instance_place(x, y + vsp, oWall); //get the instance of the wall in the future in the vertical
 if (touchingy != noone) { //If touching a wall in the vertical
 	if (vsp > 0) //Falling
 		y = floor(touchingy.bbox_top + (y - bbox_bottom) - offset);
@@ -27,4 +27,4 @@ if (touchingy != noone) { //If touching a wall in the vertical
 }
 
 //check to see if a wall is 1 pixel under (plus your vertical speed), then you are standing, and return that variable
-return (instance_place(x, y + (offset), oWallPlayer) != noone);
+return (instance_place(x, y + (offset), oWall) != noone);
