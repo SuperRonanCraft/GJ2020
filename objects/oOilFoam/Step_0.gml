@@ -39,7 +39,7 @@ if(isFloor){
 			instance_create_depth(x,y-10,depth-1,oSmoke);
 		}
 		part_emitter_region(global.ParticleSystem1,global.Emitter1,bbox_left,bbox_right,y-10,y+10,ps_shape_ellipse,ps_distr_gaussian);
-		part_emitter_burst(global.ParticleSystem1,global.Emitter1,oParticleHandler.ds_part[?PARTICLES.OIL],5);	
+		part_emitter_burst(global.ParticleSystem1,global.Emitter1,oParticleHandler.ds_part[?PARTICLES.FIRE],15);	
 
 		instance_destroy(self,true);
 	}
