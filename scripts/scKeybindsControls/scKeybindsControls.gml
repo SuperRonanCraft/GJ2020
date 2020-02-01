@@ -8,12 +8,13 @@ var key_jump = keyboard_check_pressed(keyjump);
 //Horizontal
 hsp = (key_right - key_left) * move_speed;
 
-if(hsp > 0){
+if (hsp > 0) {
 	facing = 1;	
-}
-else if(hsp < 0){
+} else if (hsp < 0) {
 	facing = -1;	
 }
 
+if (standing)
+	vsp -= key_jump * jump_height;
 
 

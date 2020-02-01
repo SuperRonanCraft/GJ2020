@@ -14,7 +14,7 @@ enum ROOMTYPE{
 	DOOR1,LIVINGROOM,DOOR2	
 }
 
-//global.key_p1_jump = ord("W");
+global.key_p1_jump = ord("W");
 //global.key_p1_shoot = ord("S");
 global.key_p1_left = ord("A");
 global.key_p1_right = ord("D");

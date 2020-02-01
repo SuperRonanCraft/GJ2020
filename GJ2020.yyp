@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "e82b1892-249e-44fe-949a-0d7f57cd8db1",
+            "Value": {
+                "id": "2f991391-f817-4974-b181-20731ceef525",
+                "resourcePath": "objects\\oWarnings\\oWarnings.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e88aa25d-5357-4c46-b85a-1f80bfb4511c",
             "Value": {
                 "id": "0223cde5-366d-4724-be11-47c9c0858ecf",
