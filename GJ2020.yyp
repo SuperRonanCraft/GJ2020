@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "356d67c3-7859-4e31-95be-304aaf0b7250",
+            "Value": {
+                "id": "5d2d05d8-2c7f-4059-912f-9b18c233a392",
+                "resourcePath": "objects\\oSmoke\\oSmoke.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "365c1ea7-2ad0-4094-a864-d5fd6f7f72a1",
             "Value": {
                 "id": "1764141f-cb0b-4d28-aa83-39b29e8399a5",
