@@ -1,3 +1,0 @@
-/// @description  
-hsp = inherentHSP;
-

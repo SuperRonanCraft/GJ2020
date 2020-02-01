@@ -13,8 +13,8 @@ if(!itemEquipped){
 else{
 
 
-	if(keyboard_check(ord("S"))){
-		show_debug_message("spraying");
+	if(keyboard_check(vk_space)){
+		//show_debug_message("spraying");
 		var foam = instance_create_depth(x+(25*oPlayer.facing), y,depth+1,oFoam);
 		foam.hsp = oPlayer.facing * irandom_range(5,10);
 	}
