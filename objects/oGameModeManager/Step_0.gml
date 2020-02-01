@@ -1,14 +1,18 @@
 
 if (game_health <= 0) { //We are dead, start animating!
+	global.play = false;
+	game_win_lose = true;
+	global.win = false;
 	game_end_time = max(game_end_time - 1, 0);
 	if (game_end_time <= 0)
 		SlideTransition(TRANS_MODE.GOTO, rLose);
-	global.win = false;
 } else if (timer >= timer_max) {
+	global.play = false;
+	game_win_lose = true;
+	global.win = true;
 	game_end_time = max(game_end_time - 1, 0);
 	if (game_end_time <= 0)
 		SlideTransition(TRANS_MODE.GOTO, rWin);
-	global.win = true;
 }
 
 if (global.play) {
@@ -19,7 +23,7 @@ if (global.play) {
 		var _hazard = _hazards_list[irandom_range(0, array_length_1d(_hazards_list) - 1)];
 		if (_hazard == "hacked")
 			if (!instance_exists(oDrone) || oDrone.hacked || 
-					oDrone.hacked_cooldown < oDrone.hacked_cooldown_max || irandom(100) < 90)
+					oDrone.hacked_cooldown < oDrone.hacked_cooldown_max || irandom(100) < 80)
 				_hazard = _hazards_list[0];
 		switch (_hazard) {
 			case "fire":
