@@ -6,3 +6,11 @@ event_inherited();
 
 //Tool needed fire-extinguisher
 //Mini-game 
+
+sprite_index = choose(sFire1, sFire2, sFire3);
+
+fire_size = 1;
+fire_size_max = 10;
+fire_size_change = 0.02;
+//PARTICLE!!!! //fire_part = ;
+fire_part_amt = 10;

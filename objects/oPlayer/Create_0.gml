@@ -32,3 +32,4 @@ enum PLAYERANIMATIONSTATE{
 
 scGravityStart();
 scKeybindsSet();
+alarm[0] = 30;

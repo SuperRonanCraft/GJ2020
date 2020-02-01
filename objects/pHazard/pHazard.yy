@@ -73,6 +73,20 @@
             "value": "5",
             "varName": "damage",
             "varType": 1
+        },
+        {
+            "id": "8e64fad3-e67c-4b41-978c-c3e634da9a98",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "FIRE BREACH",
+            "varName": "hazard_text",
+            "varType": 2
         }
     ],
     "solid": false,

@@ -1,8 +1,8 @@
 {
-    "id": "0541b51c-b66d-40f7-abb5-922eec274c67",
+    "id": "10abf9bd-659c-4ae6-8461-9ab12eca5df7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oWall",
+    "name": "pItem",
     "eventList": [
         
     ],
@@ -22,23 +22,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "db12f8ea-fa79-47d9-a2ce-6b20eea4507e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "walkable",
-            "varType": 3
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "e88aa25d-5357-4c46-b85a-1f80bfb4511c",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

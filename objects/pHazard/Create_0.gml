@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @desc
 
-
+scCreateWarning(x, y, hazard_text, hazard_type);
 
 enum HAZARDS {
 	FIRE, OIL, BREACH, SHIELD, POWER
