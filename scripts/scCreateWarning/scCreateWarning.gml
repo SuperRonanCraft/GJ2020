@@ -3,11 +3,13 @@
 ///@arg text
 ///@arg type
 ///@arg color
+///@arg id
 var xx = argument[0];
 var yy = argument[1];
 var text = argument[2];
 var type = argument[3];
 var _color = argument[4];
+var _id = argument[5];
 
 var gui_width = display_get_gui_width();
 var gui_height = display_get_gui_height();
@@ -26,8 +28,10 @@ with (oWarnings) {
 			var _loc = ds_map_create();
 			_loc[? "x"] = xx;
 			_loc[? "y"] = yy;
+			_loc[? "id"] = _id;
 			ds_list_add(_map[? WARNING_MAP.LOC_LIST], _loc);
 			added = true;
+			break;
 		}
 	}
 	if (!added) {
@@ -35,6 +39,7 @@ with (oWarnings) {
 		var _loc = ds_map_create();
 		_loc[? "x"] = xx;
 		_loc[? "y"] = yy;
+		_loc[? "id"] = _id;
 		warn[? WARNING_MAP.LOC_LIST] = ds_list_create();
 		ds_list_add(warn[? WARNING_MAP.LOC_LIST], _loc);
 		warn[? WARNING_MAP.TEXT] = text;

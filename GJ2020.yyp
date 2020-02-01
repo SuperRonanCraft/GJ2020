@@ -575,6 +575,14 @@
             }
         },
         {
+            "Key": "cb8d1456-c8c1-4945-89d1-5b78f8113aeb",
+            "Value": {
+                "id": "1b1580df-d452-4c36-b061-ddf9c84ed288",
+                "resourcePath": "scripts\\scRemoveWarning\\scRemoveWarning.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "d9577a6a-dc4f-4ed4-a6e0-f81c58a78055",
@@ -748,6 +756,7 @@
         "cdc85e30-daec-4bb6-bc60-733f4fe706bd",
         "0477efda-9793-4cbc-88e1-1696733bec72",
         "9dbd8457-ab32-4558-b5f2-2199c7532429",
+        "cb8d1456-c8c1-4945-89d1-5b78f8113aeb",
         "753ba8ec-0635-40d1-8118-f45c5dcf60f3",
         "73916b9e-7998-48c3-a569-71fa392c6841",
         "f1bd3e41-16cc-451a-8b3e-6eeb417fa6bb",
