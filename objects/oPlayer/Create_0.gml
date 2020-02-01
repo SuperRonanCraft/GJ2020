@@ -5,7 +5,7 @@ vsp = 0;
 move = 0;
 type = ENEMY.SCOUT;
 
-depth = -20;
+depth = 20;
 
 playerState = PLAYERSTATE.NORMAL;
 playerAnimState = PLAYERANIMATIONSTATE.STANDING;
@@ -18,6 +18,8 @@ animationVar = 0;
 image_speed = 0.3;
 
 canControl = true;
+
+itemHeld = noone;
 
 enum PLAYERSTATE{
 
