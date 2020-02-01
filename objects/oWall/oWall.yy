@@ -1,19 +1,10 @@
 {
-    "id": "56935b6f-ad98-4e6e-bd25-d1ee0a3e4e8f",
+    "id": "0541b51c-b66d-40f7-abb5-922eec274c67",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objPlayer",
+    "name": "oWall",
     "eventList": [
-        {
-            "id": "3c245d19-346d-468f-a2a7-812126560e99",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "56935b6f-ad98-4e6e-bd25-d1ee0a3e4e8f"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "e88aa25d-5357-4c46-b85a-1f80bfb4511c",
     "visible": true
 }

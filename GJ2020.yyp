@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "0541b51c-b66d-40f7-abb5-922eec274c67",
+            "Value": {
+                "id": "1c86c866-2222-49e0-9c6a-781e74a18ed8",
+                "resourcePath": "objects\\oWall\\oWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "283ecbd9-2dcb-4579-8274-d31a8c3ca89c",
             "Value": {
                 "id": "37f9f79b-7bf1-4887-8bb4-34f8910fd9b3",
                 "resourcePath": "views\\283ecbd9-2dcb-4579-8274-d31a8c3ca89c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2dc08ce3-a61c-4d23-91eb-94a347870258",
+            "Value": {
+                "id": "83a48d17-78c9-443c-b05d-da61c2a72ad1",
+                "resourcePath": "sprites\\sPlayer_standing\\sPlayer_standing.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -60,6 +76,14 @@
                 "id": "df796469-da4c-4cfa-84ba-88b98e351819",
                 "resourcePath": "views\\47f07661-e461-4f18-881a-b76ed3b58296.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "568e4a28-7510-4dc0-a551-71c57ee470a9",
+            "Value": {
+                "id": "4d7775f1-e1f3-4752-b2b3-c52fe4efb7c0",
+                "resourcePath": "objects\\oGame\\oGame.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -90,7 +114,7 @@
             "Key": "7dbc577d-cc8e-4235-8580-7b5ca3e1afc3",
             "Value": {
                 "id": "c9079ebf-8475-4442-8773-431371dd024d",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rGame\\rGame.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -132,14 +156,6 @@
                 "id": "10362727-93e2-429f-9d88-f310c842be6a",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
-            }
-        },
-        {
-            "Key": "b656cc6b-94c9-4081-86f6-37f2f141db34",
-            "Value": {
-                "id": "95f239f9-279a-4ecc-8e11-e79ba8b22401",
-                "resourcePath": "sprites\\spPlayer\\spPlayer.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -188,6 +204,22 @@
                 "id": "de9748cc-e46c-4ad8-b8cd-dc3a2d579016",
                 "resourcePath": "views\\d6760c1f-24d6-42c4-a640-3890316d7407.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e10ba0ae-9484-4666-8bdc-7a78f75796dd",
+            "Value": {
+                "id": "d7b324a8-5e14-47b6-9b28-591440efb814",
+                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e88aa25d-5357-4c46-b85a-1f80bfb4511c",
+            "Value": {
+                "id": "0223cde5-366d-4724-be11-47c9c0858ecf",
+                "resourcePath": "sprites\\spWall\\spWall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
