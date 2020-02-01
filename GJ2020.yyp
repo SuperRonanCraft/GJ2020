@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "56935b6f-ad98-4e6e-bd25-d1ee0a3e4e8f",
+            "Value": {
+                "id": "9366ca66-9952-45a2-95bb-b87786018721",
+                "resourcePath": "objects\\objPlayer\\objPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6a10e525-5561-4532-8838-683e0ebedf3e",
             "Value": {
                 "id": "0c82b23a-5a29-4400-8270-c70da19fe4d0",
