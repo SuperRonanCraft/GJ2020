@@ -3,10 +3,12 @@ if (game_health <= 0) { //We are dead, start animating!
 	game_end_time = max(game_end_time - 1, 0);
 	if (game_end_time <= 0)
 		SlideTransition(TRANS_MODE.GOTO, rLose);
+	global.win = false;
 } else if (timer <= 0) {
 	game_end_time = max(game_end_time - 1, 0);
 	if (game_end_time <= 0)
 		SlideTransition(TRANS_MODE.GOTO, rWin);
+	global.win = true;
 }
 
 if (global.play) {
@@ -23,9 +25,11 @@ if (global.play) {
 
 		var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
 
-		var xx = wall.bbox_left + ((wall.bbox_right - wall.bbox_left) * random(1));
-		var yy = wall.y;
-		if (!instance_place(xx, yy, oWall))
-			instance_create_depth(xx, yy, depth - 1, oHazardFire);
+		if (wall != noone) {
+			var xx = wall.bbox_left + ((wall.bbox_right - wall.bbox_left) * random(1));
+			var yy = wall.y;
+			if (!instance_place(xx, yy, oWall))
+				instance_create_depth(xx, yy, depth - 1, oHazardFire);
+		}
 	}
 }

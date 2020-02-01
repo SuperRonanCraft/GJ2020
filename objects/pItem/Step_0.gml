@@ -1,7 +1,7 @@
 /// @description  
 
 
-if(!itemEquipped && collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,oPlayer,false,true) != noone){
+if(can_pickup && !itemEquipped && collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,oPlayer,false,true) != noone){
 	if(oPlayer.itemHeld == noone){
 		pickupIcon = sp_pickup;	
 	}

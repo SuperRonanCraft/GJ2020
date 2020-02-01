@@ -11,5 +11,7 @@ target = noone;
 hacked = false;
 /// Create the path
 path = path_add();
+py = y;
+depth = -10;
 
 alarm[0] = 20;
