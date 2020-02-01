@@ -23,5 +23,5 @@ var valigh = argument_count >= 9 ? (argument[8] != noone ? argument[8] : fa_midd
 draw_set_halign(haligh);
 draw_set_valign(valigh);
 
-draw_text_transformed_color(xx + 2, yy + 32 + 2, text, scale, scale, 0, c2, c2, c2, c2, alpha);
-draw_text_transformed_color(xx, yy + 32, text, scale, scale, 0, c, c, c, c, alpha);
+draw_text_transformed_color(xx + 2, yy + 2, text, scale, scale, 0, c2, c2, c2, c2, alpha);
+draw_text_transformed_color(xx, yy, text, scale, scale, 0, c, c, c, c, alpha);

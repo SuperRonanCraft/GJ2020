@@ -1,13 +1,13 @@
 event_inherited();
 
 ds_menu_main = scUICreateMenuPage(
-	["PLAY",		menu_element_type.goto_room,	rGame, "Initiate gameplay!"],
-	["SETTINGS",	menu_element_type.page_transfer,	menu_page.settings, "Change some levers and buttons"],
-	["QUIT",		menu_element_type.page_transfer,	menu_page.confirm, "Don't go!"]
+	["PLAY",		menu_element_type.goto_room,	rGame, "INITIATE MISSION!"],
+	["SETTINGS",	menu_element_type.page_transfer,	menu_page.settings, "CHANGE SOME GALACTIC LEVERS"],
+	["QUIT",		menu_element_type.page_transfer,	menu_page.confirm, "DON'T GO!"]
 );
 
 ds_confirm = scUICreateMenuPage(
-	["CONFIRM",		menu_element_type.script_runner,	scUIQuitGame, "Are you sure?"], //Only script that has text input
+	["CONFIRM",		menu_element_type.script_runner,	scUIQuitGame, "ARE YOU SURE?"], //Only script that has text input
 	["CANCEL",		menu_element_type.page_transfer,	menu_page.main]
 );
 

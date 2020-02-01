@@ -39,7 +39,7 @@ global.vol_sounds = 1;
 global.fullscreen = false;
 
 //FONT
-//draw_set_font(font0);
+draw_set_font(fAlarm);
 
 //PAUSING
 background = noone;

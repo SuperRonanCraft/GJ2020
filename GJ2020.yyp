@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "38475253-2ef1-4350-8595-32bcddf07528",
+            "Value": {
+                "id": "ac76a371-7380-42bf-9eeb-fd7ecc87731d",
+                "resourcePath": "fonts\\fAlarm\\fAlarm.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "4065aa67-6d8c-46f4-b34e-1553da9bd1cf",
             "Value": {
                 "id": "6b2eea2a-4868-45c1-8621-8ce5d98dd578",
@@ -388,6 +396,14 @@
                 "id": "d9577a6a-dc4f-4ed4-a6e0-f81c58a78055",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ccdf0eb1-abf2-4a5a-9f33-cb9ac3160e15",
+            "Value": {
+                "id": "1fa635e0-9c32-413e-b634-94cb5c04481d",
+                "resourcePath": "objects\\oGameModeManager\\oGameModeManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
