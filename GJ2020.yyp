@@ -63,6 +63,30 @@
             }
         },
         {
+            "Key": "05b236dc-0c32-4168-aae9-56fb5391de14",
+            "Value": {
+                "id": "2ca1238e-1559-4bc7-9f36-145d8824617d",
+                "resourcePath": "views\\05b236dc-0c32-4168-aae9-56fb5391de14.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0c2847f1-87c4-4b87-8cea-9c3b79fd29e9",
+            "Value": {
+                "id": "e8cbaa9d-815b-4606-942e-09f074d89f7f",
+                "resourcePath": "sprites\\sFire2\\sFire2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0f0959d8-edc3-4594-8cc3-2e10a5c95078",
+            "Value": {
+                "id": "1151572d-7041-4057-95a4-8f80fa25b089",
+                "resourcePath": "sprites\\sParticleFlame\\sParticleFlame.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "10f58b08-0894-4fc8-a43a-b06dc142944a",
             "Value": {
                 "id": "5ad51b8e-bb93-430e-988f-a598a5e599f8",
@@ -191,6 +215,14 @@
             }
         },
         {
+            "Key": "59ed7b84-561e-4e04-99d3-809f0169dcf9",
+            "Value": {
+                "id": "350ba19d-ae7e-43a1-8a4b-78776e6ba190",
+                "resourcePath": "objects\\pHazard\\pHazard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5cd62f0a-d0f1-4c9f-aa45-4ab4d79ecd51",
             "Value": {
                 "id": "26a40881-ebae-4e99-978f-acbd1a6640dd",
@@ -244,6 +276,22 @@
                 "id": "d8ae33fb-8350-4797-bab3-39003212a6b7",
                 "resourcePath": "scripts\\scGravityStart\\scGravityStart.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "784a4a93-ac57-4b98-b80c-e12207fda320",
+            "Value": {
+                "id": "ae0db8e7-5443-4696-88b3-a1fc2f50fb3b",
+                "resourcePath": "objects\\oParticleHandler\\oParticleHandler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7a95de0c-893a-4321-8ea9-34c2b4c897bb",
+            "Value": {
+                "id": "aa3832b9-4267-4577-a6ff-9ea88f47f8d9",
+                "resourcePath": "objects\\oHazardFire\\oHazardFire.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -367,6 +415,14 @@
             }
         },
         {
+            "Key": "ae0a3857-71aa-48e9-af94-d5ba231f9d4c",
+            "Value": {
+                "id": "8d9da2dc-7d6c-443f-a3bd-3e30a21a9a1d",
+                "resourcePath": "sprites\\sFire1\\sFire1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "af8900f0-13b2-4bfc-bf63-cd1a705aca95",
             "Value": {
                 "id": "404814c9-a15f-4677-bd75-4711c65e1581",
@@ -455,6 +511,14 @@
             }
         },
         {
+            "Key": "d197e92d-dc57-456f-96b6-7d9d9237670b",
+            "Value": {
+                "id": "7c3ac927-8e29-4092-899a-17c9663489e5",
+                "resourcePath": "sprites\\sParticleSmoke\\sParticleSmoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d2dadf71-b7eb-46c2-8a2f-434f739925a8",
             "Value": {
                 "id": "b9052cab-2e4e-4192-9058-07fcec51cf1d",
@@ -499,6 +563,14 @@
             "Value": {
                 "id": "0223cde5-366d-4724-be11-47c9c0858ecf",
                 "resourcePath": "sprites\\spWall\\spWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eb0262ed-1049-4d6a-9c2b-1c3ed041ac7b",
+            "Value": {
+                "id": "6e0edfda-3bfe-443d-a180-42d6a5569a02",
+                "resourcePath": "sprites\\sFire3\\sFire3.yy",
                 "resourceType": "GMSprite"
             }
         },
