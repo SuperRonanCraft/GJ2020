@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "4f78bc6e-4ec0-4843-a1a7-4c75e8ba7a46",
+            "Value": {
+                "id": "b6bff464-3410-4808-a8f2-03e373546bde",
+                "resourcePath": "sprites\\sp_oilParticleSplash\\sp_oilParticleSplash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5238e325-fb37-4c36-b216-e884eaababf9",
             "Value": {
                 "id": "68078e49-18f3-4da9-917a-009be0b33c3b",
@@ -775,6 +783,14 @@
             }
         },
         {
+            "Key": "e3611574-ccb5-4d67-b007-fdedcabd2e48",
+            "Value": {
+                "id": "4849ca5f-0f56-44f4-938b-fab0f37a57c0",
+                "resourcePath": "sprites\\sp_oilFloor\\sp_oilFloor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e63d6139-89df-4d62-a6c4-41ac0f427147",
             "Value": {
                 "id": "bdfe36b8-c0cd-4536-82c8-565480d3927d",
@@ -844,6 +860,14 @@
                 "id": "31b18237-42f2-4c2a-b940-9ee6b6f9b491",
                 "resourcePath": "scripts\\scKeybindsSet\\scKeybindsSet.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f1f3de5a-556d-4f7d-80cd-3ba3b1b72042",
+            "Value": {
+                "id": "001d629f-a6c9-4233-aad9-b59444748e72",
+                "resourcePath": "sprites\\sp_oilParticle\\sp_oilParticle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
