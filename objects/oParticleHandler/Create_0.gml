@@ -10,11 +10,11 @@ global.Emitter1 = part_emitter_create(global.ParticleSystem1);
 ds_part = ds_map_create();
 
 var parttype = part_type_create();
-part_type_sprite(parttype, sParticleFlame, false, false, true);
+part_type_sprite(parttype, sParticleFlame, true, true, false);
 part_type_size(parttype, 1, 1, 0, 0);
 part_type_direction(parttype, 45, 135, 0, 0.4);
-part_type_speed(parttype, 0.5, 1, 0.1, 0);
-part_type_life(parttype,100,120);
+part_type_speed(parttype, 0.5, 1, -0.01, 0);
+part_type_life(parttype,30,30);
 ds_map_add(ds_part, PARTICLES.FIRE, parttype);
 
 
