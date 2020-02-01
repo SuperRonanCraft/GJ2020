@@ -8,7 +8,7 @@ draw_self();
 //scFlash(flash_alpha, c_white, image_xscale, image_yscale, sprite_index, image_index, x, y, image_angle);
 flash_alpha = max(flash_alpha - 0.05, 0);
 
-if (hacked) {
+if (hacked && !disabled) {
 	if (py < y) //DOWN
 		sprite_index = spDroneHacked_down
 	else if (py > y)

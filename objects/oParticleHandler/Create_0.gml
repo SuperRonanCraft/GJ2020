@@ -19,17 +19,17 @@ ds_map_add(ds_part, PARTICLES.FIRE, parttype);
 
 var parttype = part_type_create();
 part_type_sprite(parttype, s_particleRepairing, true, true, false);
-part_type_size(parttype, 1, 1, 0, 0);
-part_type_direction(parttype, 0, 359, 0, 0.4);
-part_type_speed(parttype, 0.5, 1, -0.01, 0);
-part_type_life(parttype, 10, 30);
+part_type_size(parttype, 0.8, 1.1, 0.01, 0);
+part_type_direction(parttype, 0, 359, 0, 2);
+part_type_speed(parttype, 1, 2, -0.01, 0);
+part_type_life(parttype, 20, 30);
 ds_map_add(ds_part, PARTICLES.REPAIR, parttype);
 
 var parttype = part_type_create();
 part_type_sprite(parttype, s_particleFixed, true, true, false);
-part_type_size(parttype, 1, 1, 0, 0);
-part_type_direction(parttype, 0, 359, 0, 0.4);
-part_type_speed(parttype, 0.5, 1, -0.01, 0);
+part_type_size(parttype, 1, 1.2, 0, 0);
+part_type_direction(parttype, 0, 359, 0, 3);
+part_type_speed(parttype, 1, 2, -0.03, 0);
 part_type_life(parttype, 50, 80);
 ds_map_add(ds_part, PARTICLES.FIXED, parttype);
 

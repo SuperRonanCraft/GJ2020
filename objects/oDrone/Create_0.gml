@@ -9,6 +9,7 @@ flash_alpha = 0;
 disabled = false;
 target = noone;
 hacked = false;
+can_pickup = false;
 /// Create the path
 path = path_add();
 py = y;

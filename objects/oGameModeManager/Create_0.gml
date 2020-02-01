@@ -23,7 +23,12 @@ var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
 
 var xx = wall.bbox_left + 32 + (((wall.bbox_right - 32) - (wall.bbox_left + 32)) * random(1));
 var yy = wall.y - 20;
-if (!instance_place(xx, yy, oWall))
-	instance_create_depth(xx, yy, depth - 1, oItemExtinguisher);
+instance_create_depth(xx, yy, depth - 1, oItemExtinguisher);
+
+
+var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
+var xx = wall.bbox_left + 16 + (((wall.bbox_right - 16) - (wall.bbox_left + 16)) * random(1));
+var yy = wall.y;
+instance_create_depth(xx, yy, 100, oRepairStation);
 
 scPlaySound(SOUND.MUSIC_3, noone, noone, true);
