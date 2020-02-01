@@ -9,6 +9,8 @@ flash_alpha = 0;
 disabled = false;
 target = noone;
 hacked = false;
+hacked_cooldown_max = 60 * 20;
+hacked_cooldown = 60 * 10;
 can_pickup = false;
 /// Create the path
 path = path_add();

@@ -1,9 +1,8 @@
 /// @desc Warnings
 
-
+var xx = RES_W - 200;
+var yy = RES_H - 80;
 for (var i = 0; i < ds_list_size(warnings); i++) {
-	var xx = RES_W - 200;
-	var yy = RES_H - 80;
 	var warn = warnings[| i];
 	var text = warn[? WARNING_MAP.TEXT];
 	var _title = "WARNING";
@@ -55,4 +54,5 @@ for (var i = 0; i < ds_list_size(warnings); i++) {
 		warn[? WARNING_MAP.PERCENT_LINE_LOC] = max(warn[? WARNING_MAP.PERCENT_LINE_LOC] - warning_alpha_change, 0);
 	} else
 		warn[? WARNING_MAP.ALPHA_LINE] = 1;
+	yy -= 120;
 }

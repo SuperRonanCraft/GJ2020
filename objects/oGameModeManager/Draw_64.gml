@@ -7,7 +7,7 @@ if (global.play) {
 	timer -= 0.1;
 }
 
-scDrawText(_x, _y, "TIME", c_white, 1, c_dkgray);
+scDrawText(_x, _y, "HYPER-DRIVE CHARGE", c_white, 1, c_dkgray);
 _y += 32;
 var _tper = timer / timer_max;
 draw_healthbar(_x - 150, _y, _x + 150, _y + 15, 100 * _tper, c_gray, c_yellow, c_yellow, 0, true, false);

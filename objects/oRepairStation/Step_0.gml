@@ -28,6 +28,7 @@ if (itemReparing != noone) {
 			itemReparing.hacked = false;
 			itemReparing.can_pickup = false;
 			itemReparing.disabled = false;
+			scRemoveWarning(itemReparing);
 			with (itemReparing) {
 				part_emitter_region(global.ParticleSystem1,global.Emitter1, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_ellipse, ps_distr_gaussian);
 				part_emitter_burst(global.ParticleSystem1,global.Emitter1, oParticleHandler.ds_part[?PARTICLES.FIXED], 40);

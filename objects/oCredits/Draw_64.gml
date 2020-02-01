@@ -12,6 +12,6 @@ if (y < -(string_height(credits) * 0.5))
 	SlideTransition(TRANS_MODE.GOTO, rMenu);
 	
 if (global.win)
-	scDrawText(10, 10, "YOU WIN! You are not in debt!", c_green, 1, noone, 1, fa_left, fa_top);
+	scDrawText(10, 10, "YOU WIN! YOUR SHIP GOT AWAY IN ONE PIECE!", c_green, 1, noone, 1, fa_left, fa_top);
 else
-	scDrawText(10, 10, "YOU LOST! You bought all the cookies!", c_red, 1, noone, 1, fa_left, fa_top);
+	scDrawText(10, 10, "YOU LOST! YOUR SHIP GOT LOST IN SPACE!", c_red, 1, noone, 1, fa_left, fa_top);

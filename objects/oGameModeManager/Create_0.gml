@@ -2,7 +2,7 @@
 global.play = true;
 
 timer_max = 500; //New time
-timer = timer_max;
+timer = 0;
 game_shield = 100;
 game_health = 1000;
 game_end_time = 120;

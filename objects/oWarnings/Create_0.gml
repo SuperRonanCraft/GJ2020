@@ -20,7 +20,7 @@ warn[? WARNING_MAP.ALPHA_FADING] = false;
 ds_list_add(warnings, warn);*/
 
 enum WARNING_TYPE {
-	FIRE, HULL_BREACH, INVASION
+	FIRE, HACKED
 }
 
 enum WARNING_MAP {
