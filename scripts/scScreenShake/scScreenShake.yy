@@ -1,8 +1,8 @@
 {
-    "id": "af8900f0-13b2-4bfc-bf63-cd1a705aca95",
+    "id": "52bf7011-b434-455b-b401-3945ebf3821b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scUICreateMenuPage1",
+    "name": "scScreenShake",
     "IsCompatibility": false,
     "IsDnD": false
 }
