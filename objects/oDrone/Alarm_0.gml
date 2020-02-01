@@ -1,6 +1,8 @@
 /// @desc find a new path
-if (disabled)
+if (disabled || itemEquipped) {
+	alarm[0] = 20;
 	exit;
+}
 if (!instance_exists(target) || target.extinguished) {
 	if (instance_number(oHazardFire) > 0)
 		target = instance_find(oHazardFire, irandom_range(0, instance_number(oHazardFire) - 1));

@@ -8,6 +8,7 @@ roaming_time_crt = 0;
 flash_alpha = 0;
 disabled = false;
 target = noone;
+hacked = false;
 /// Create the path
 path = path_add();
 

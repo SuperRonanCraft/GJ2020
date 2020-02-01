@@ -22,11 +22,11 @@ if(!itemEquipped && collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_botto
 	}
 	
 	
-	if	( keyboard_check_pressed(ord("E") ) ){
-		
+	if	(keyboard_check_pressed(ord("E")) && timer_cooldown >= timer_cooldown_max){
 		if(oPlayer.itemHeld != noone){
 			oPlayer.itemHeld.itemEquipped = false;
 			oPlayer.itemHeld.hsp = oPlayer.facing*irandom_range(5,20);
+			oPlayer.itemHeld.timer_cooldown = 0;
 		}
 		oPlayer.itemHeld = id;
 		
@@ -46,3 +46,4 @@ if(itemEquipped){
 	y = oPlayer.y-25;
 	image_xscale = oPlayer.facing;
 }
+timer_cooldown = min(timer_cooldown + 1, timer_cooldown_max);
