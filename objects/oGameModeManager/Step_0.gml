@@ -14,6 +14,13 @@ if (game_health <= 0) { //We are dead, start animating!
 	if (game_end_time <= 0)
 		SlideTransition(TRANS_MODE.GOTO, rWin);
 }
+if (game_win_lose && !game_win_lose_sound) {
+	if (!global.win) {
+		scPlaySound(SOUND.ALIEN, noone, noone, noone, 0.8);
+		audio_sound_gain(SOUND.ALIEN, 0, 10000);
+	}
+	game_win_lose_sound = true;
+}
 
 if (global.play) {
 	
@@ -23,7 +30,15 @@ if (global.play) {
 			scPlaySound(SOUND.DRAIN);
 		}
 		event_power_lost = true;
+		event_time_since = 0;
+	} else if (event_power_lost && event_time_since > 30) {
+		with (oLight) {
+			if (alpha > 0)
+				alpha -= 0.01;
+		}
 	}
+	
+	event_time_since += 1/60;
 	
 	hazard_spawn_timer++;
 	if (hazard_spawn_timer >= hazard_spawn_timer_max) {

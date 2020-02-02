@@ -5,10 +5,12 @@ timer_max = 500; //New time
 timer = 0;
 timer_charge_down = 0;
 game_shield = 100;
-game_health = 1000;
+game_health = 850;
 game_end_time = 120;
 game_win_lose = false;
+game_win_lose_sound = false;
 
+event_time_since = 0;
 event_power_lost = false;
 
 hazard_spawn_timer = 0;

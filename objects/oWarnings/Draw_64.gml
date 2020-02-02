@@ -1,6 +1,6 @@
 /// @desc Warnings
 
-var xx = RES_W - 200;
+var xx = RES_W - ((RES_W / 3) / 2);
 var yy = RES_H - 80;
 for (var i = 0; i < ds_list_size(warnings); i++) {
 	var warn = warnings[| i];
@@ -16,7 +16,7 @@ for (var i = 0; i < ds_list_size(warnings); i++) {
 	var _title_width = string_width(_title) * warning_scale;
 	var _text_width = string_width(text) * warning_scale_text;
 	var _xo = (_title_width > _text_width ? _title_width : _text_width) / 2 + 20;
-	if (warn[? WARNING_MAP.TYPE] != WARNING_TYPE.FIRE)
+	/*if (warn[? WARNING_MAP.TYPE] != WARNING_TYPE.FIRE)
 		for (var a = 0; a < ds_list_size(_locations); a++) { //LOCATION LINES
 			var _loc = _locations[| a];
 			var xx_s = _loc[? "x"];
@@ -30,7 +30,7 @@ for (var i = 0; i < ds_list_size(warnings); i++) {
 			draw_line_width_color(xx_sr, yy_sr, _x_loc, _y_loc, warning_line_width, warning_line_color, warning_line_color);
 			draw_circle_color(_x_loc, _y_loc, 5, warning_line_color, warning_line_color, false);
 			draw_set_alpha(1);
-		}
+		}*/
 	scDrawRect(xx - _xo, yy + 15 - 40, xx - _xo + 4, yy + 15 + 40, warning_line_color, false, alpha);
 	scDrawRect(xx + _xo, yy + 15 - 40, xx + _xo + 4, yy + 15 + 40, warning_line_color, false, alpha);
 	scDrawRect(xx - _xo + 5, yy + 15 - 40, xx - _xo + 18, yy + 15 - 36, warning_line_color, false, alpha);
@@ -55,5 +55,5 @@ for (var i = 0; i < ds_list_size(warnings); i++) {
 		warn[? WARNING_MAP.PERCENT_LINE_LOC] = max(warn[? WARNING_MAP.PERCENT_LINE_LOC] - warning_alpha_change, 0);
 	} else
 		warn[? WARNING_MAP.ALPHA_LINE] = 1;
-	yy -= 120;
+	yy -= 110;
 }

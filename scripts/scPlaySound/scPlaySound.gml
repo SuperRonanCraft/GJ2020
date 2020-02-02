@@ -36,5 +36,7 @@ enum SOUND {
 	MUSIC_3 = noone,//snMusicTitle3,
 	ENTIGUISHER_GAS = snExtinguisherGas,
 	ENTIGUISHER_GAS_BOT = snExtinguisherGasBOT,
-	DRAIN = snDrain
+	DRAIN = snDrain,
+	ALARM = snAlarm,
+	ALIEN = snAlien
 }

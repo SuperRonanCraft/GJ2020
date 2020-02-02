@@ -8,6 +8,7 @@ warning_scale = 0.8;
 warning_scale_text = 0.5;
 warning_line_color = c_red;
 warning_line_width = 2;
+audio_on = false;
 
 /*var warn = ds_map_create();
 warn[? WARNING_MAP.TYPE] = WARNING_TYPE.FIRE;

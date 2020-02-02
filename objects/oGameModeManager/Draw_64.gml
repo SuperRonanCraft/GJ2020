@@ -17,13 +17,13 @@ if (game_win_lose) {
 		switch (global.win) {
 			case true: //GAME WON!
 				with (oCamera) {
-					y += RES_H / 100;
+					y += RES_H / 120;
 				}
 				break;
 			case false: //GAME LOST!
 				with (oCamera) {
-					y += 20;
-					angle += 0.9;
+					y -= 20;
+					angle += 0.7;
 					camera_set_view_angle(cam, angle)
 				}
 		}

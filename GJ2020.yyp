@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "5bc89ef1-3333-448e-85a3-ae2de3143b37",
+            "Value": {
+                "id": "552a81ff-a780-457b-9440-bf5e2e74c75a",
+                "resourcePath": "sounds\\snAlien\\snAlien.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5cd62f0a-d0f1-4c9f-aa45-4ab4d79ecd51",
             "Value": {
                 "id": "26a40881-ebae-4e99-978f-acbd1a6640dd",
@@ -452,6 +460,14 @@
                 "id": "816c8d47-8cce-44f2-9eb2-633b422bfb1a",
                 "resourcePath": "scripts\\scUIQuitGame\\scUIQuitGame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6d37f9f6-86bc-4732-ba6b-170a32e971e6",
+            "Value": {
+                "id": "9a838166-800d-4d75-85e2-24f4861e4d67",
+                "resourcePath": "sounds\\snAlarm\\snAlarm.yy",
+                "resourceType": "GMSound"
             }
         },
         {
