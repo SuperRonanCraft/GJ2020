@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "0d1a6844-4cde-488d-9b13-4f7dbb1742ca",
-            "Value": {
-                "id": "98945ab6-d701-47e7-8dc2-efa63b9a4d07",
-                "resourcePath": "sprites\\s_powerLever\\s_powerLever.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0d43ad74-059f-432b-b70e-3df6e2a03ee7",
             "Value": {
                 "id": "c21b3010-029a-41f6-a0f7-9937d21c6985",
@@ -203,6 +195,14 @@
             "Value": {
                 "id": "37532231-4458-4a57-9e28-48fcfda12b7c",
                 "resourcePath": "sprites\\sp_fireExtinguisher\\sp_fireExtinguisher.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "27891f06-e08c-4daf-a2a2-3dc9d0af55d8",
+            "Value": {
+                "id": "f62a28f7-e7b3-490d-b9de-76d564667100",
+                "resourcePath": "sprites\\sp_LeverPower_Pull\\sp_LeverPower_Pull.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -300,6 +300,14 @@
                 "id": "ac76a371-7380-42bf-9eeb-fd7ecc87731d",
                 "resourcePath": "fonts\\fAlarm\\fAlarm.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "3b33af8f-827c-402c-823a-d1d8a86ae69e",
+            "Value": {
+                "id": "571b0e34-0478-4aea-9d0a-9834c86ba083",
+                "resourcePath": "objects\\oLeverPower\\oLeverPower.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1268,6 +1276,14 @@
                 "id": "203223fa-9e60-426c-aad7-a37e1a19a92e",
                 "resourcePath": "views\\f7bcea22-c98a-4145-9d26-0dcc4a45f84f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f90f09d7-2db3-46c1-a2e3-0a7c6c4c1ac4",
+            "Value": {
+                "id": "8179dea1-6dfe-4603-ae2d-d58b4a904bc8",
+                "resourcePath": "sprites\\sp_LeverPower\\sp_LeverPower.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

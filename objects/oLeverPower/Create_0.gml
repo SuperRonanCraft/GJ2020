@@ -17,6 +17,4 @@ pickup_indicator_scale = 0;
 pickup_indicator_scale_open = true;
 pickup_indicator_scale_change = 0.03;
 
-
-
 image_speed = 0.4;

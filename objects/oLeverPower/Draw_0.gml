@@ -23,8 +23,12 @@ if (show_icon) {
 			retic.active = true;
 			retic.button_text = "USE - E";
 			if (i == 4) {
-				retic.text = "FOAM CLENSE";
-				retic.desc = "10% POWER DRAIN";
+				if (!global.power_surge) {
+					retic.text = "FOAM CLENSE";
+					retic.desc = "10% POWER DRAIN";
+				} else {
+					retic.text = "RESTORE POWER";
+				}
 			}
 			retic.sprite_index = sp_pickupReticleAttention;
 			scPlaySound(SOUND.ITEM_HOVER, noone, noone, noone, 0.2);
@@ -39,7 +43,7 @@ if (show_icon) {
 		timer_charge_down = 0;
 		timer_charge_down_alpha = 0;
 	}
-} else if (instance_number(oHazardFire) >= 10) {
+} else if (global.power_surge) {
 	if (pulled_usable) {
 		if (pickup_indicator_scale_open) {
 			if (pickup_indicator_scale < 1)
