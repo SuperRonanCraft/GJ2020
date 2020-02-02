@@ -11,6 +11,8 @@ target = noone;
 hacked = false;
 hacked_cooldown_max = 60 * 20;
 hacked_cooldown = 60 * 10;
+foam_cooldown = 0;
+foam_cooldown_max = 25;
 can_pickup = false;
 /// Create the path
 path = path_add();

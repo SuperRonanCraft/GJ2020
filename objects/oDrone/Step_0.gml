@@ -23,10 +23,13 @@ if (hacked && !disabled) {
 	part_emitter_burst(global.ParticleSystem1,global.Emitter1, oParticleHandler.ds_part[? PARTICLES.HACKED], 1);
 	can_pickup = true;
 
-
-	var foam = instance_create_depth(x, y + 20, depth + 1, oOilFoam);
-	foam.hsp = irandom_range(-1, 1);
-	foam.lifeTime = 22;
+	foam_cooldown++;
+	if (foam_cooldown >= foam_cooldown_max) {
+		var foam = instance_create_depth(x, y + 20, depth + 1, oOilFoam);
+		foam.hsp = irandom_range(-1, 1);
+		foam.lifeTime = 120;
+		foam_cooldown = 0;
+	}
 	
 
 }
