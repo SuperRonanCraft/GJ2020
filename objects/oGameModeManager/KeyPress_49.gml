@@ -1,5 +1,5 @@
 /// @desc clear
 
-with (oSprinkler) {
+/*with (oSprinkler) {
 	active = !active;
 }

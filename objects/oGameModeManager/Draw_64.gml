@@ -18,13 +18,14 @@ if (game_win_lose) {
 		switch (global.win) {
 			case true: //GAME WON!
 				with (oCamera) {
-					if (y >= other.game_win_lose_animated_goal_reached) {
-						y = lerp(y, -other.game_win_lose_animated_goal, 0.1);
-						if (y < -other.game_win_lose_animated_goal * 0.5)
+					if (other.game_win_lose_animated_goal_reached) {
+						var _goal = other.game_win_lose_animated_goal * 3
+						y = lerp(y, _goal, 0.1);
+						if (y > _goal * 0.9)
 							other.game_win_lose_animated = true;
 					} else {
-						y = lerp(y, other.game_win_lose_animated_goal, 0.08)
-						if (y >= other.game_win_lose_animated_goal * 0.9)
+						y = lerp(y, -other.game_win_lose_animated_goal, 0.08)
+						if (y <= -other.game_win_lose_animated_goal * 0.9)
 							other.game_win_lose_animated_goal_reached = true;
 						other.game_end_time = 120;
 					}
