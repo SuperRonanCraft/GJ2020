@@ -11,7 +11,7 @@ if (game_win_lose) {
 	switch (global.win) {
 		case true: //GAME WON!
 			with (oCamera) {
-				y -= RES_H / 120;
+				y += RES_H / 100;
 			}
 			break;
 		case false: //GAME LOST!

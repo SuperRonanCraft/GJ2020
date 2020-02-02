@@ -26,26 +26,14 @@ var xx = wall.bbox_left + 16 + (((wall.bbox_right - 16) - (wall.bbox_left + 16))
 var yy = wall.y;
 instance_create_depth(xx, yy, 100, oRepairStation);
 
-var _created = false;
-while (!_created) {
-	var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
-	var xx = wall.bbox_left + 32 + (((wall.bbox_right - 32) - (wall.bbox_left + 32)) * random(1));
-	var yy = wall.y - 20;
-	if (!instance_place(xx, yy, oRepairStation)) {
-		instance_create_depth(xx, yy, depth - 1, oItemExtinguisher);
-		_created = true;
-	}
-}
+var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
+var xx = wall.bbox_left + 32 + (((wall.bbox_right - 16) - (wall.bbox_left + 32)) * random(1));
+var yy = wall.y - 50;
+instance_create_depth(xx, yy, depth - 1, oItemExtinguisher);
 
-_created = false;
-while (!_created) {
-	var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
-	var xx = wall.bbox_left + 32 + (((wall.bbox_right - 32) - (wall.bbox_left + 32)) * random(1));
-	var yy = wall.y;
-	if (!instance_place(xx, yy, oRepairStation) && !instance_place(xx, yy, oItemExtinguisher)) {
-		instance_create_depth(xx, yy, depth - 1, oLever);
-		_created = true;
-	}
-}
+/*var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
+var xx = wall.bbox_left + 32 + (((wall.bbox_right - 32) - (wall.bbox_left + 32)) * random(1));
+var yy = wall.y;
+instance_create_depth(xx, yy, depth - 1, oLever);*/
 
 scPlaySound(SOUND.MUSIC_3, noone, noone, true);

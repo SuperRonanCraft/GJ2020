@@ -4,7 +4,7 @@ pulled = false;
 pulled_usable = false;
 pulled_cooldown = 0;
 pulled_cooldown_max = 60;
-pulled_percent_use = 25 / 100;
+pulled_percent_use = 10 / 100;
 
 pulled_alpha = 0;
 pulled_alpha_fade = false;
