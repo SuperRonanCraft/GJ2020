@@ -103,10 +103,26 @@
             }
         },
         {
+            "Key": "0d1a6844-4cde-488d-9b13-4f7dbb1742ca",
+            "Value": {
+                "id": "98945ab6-d701-47e7-8dc2-efa63b9a4d07",
+                "resourcePath": "sprites\\s_powerLever\\s_powerLever.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d43ad74-059f-432b-b70e-3df6e2a03ee7",
             "Value": {
                 "id": "c21b3010-029a-41f6-a0f7-9937d21c6985",
                 "resourcePath": "sprites\\sp_pickup\\sp_pickup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0e82bbe5-2448-4455-8383-0629e6a8c8a2",
+            "Value": {
+                "id": "49f1890c-194b-4210-92c4-67530c55a479",
+                "resourcePath": "sprites\\sPlayer_jumping\\sPlayer_jumping.yy",
                 "resourceType": "GMSprite"
             }
         },
