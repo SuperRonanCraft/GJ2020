@@ -32,12 +32,12 @@ if (global.play) {
 		}
 		global.power_surge = true;
 		power_surge_happened = true;
-	} /*else if (global.power_surge && event_time_since > 30) {
+	} else if (!global.power_surge && power_surge_happened) {
 		with (oLight) {
 			if (alpha > 0)
 				alpha -= 0.01;
 		}
-	}*/
+	}
 	
 	hazard_spawn_timer++;
 	if (hazard_spawn_timer >= hazard_spawn_timer_max) {
