@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "4c24e9f5-25fa-4a3c-a1a5-6037a6b607fb",
+            "Value": {
+                "id": "f8c460a6-1937-478c-a7d2-d88f49c86b5a",
+                "resourcePath": "sprites\\sp_Lever_Pull\\sp_Lever_Pull.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4f78bc6e-4ec0-4843-a1a7-4c75e8ba7a46",
             "Value": {
                 "id": "b6bff464-3410-4808-a8f2-03e373546bde",
