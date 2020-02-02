@@ -26,6 +26,13 @@ scDrawText(_x, _y, "HYPER-DRIVE CHARGE", c_yellow, 0.75, c_dkgray);
 _y += 32;
 var _tper = timer / timer_max;
 draw_healthbar(_x - 150, _y, _x + 150, _y + 15, 100 * _tper, c_gray, c_red, c_green, 0, true, false);
+if (timer_charge_down > 0) {
+	var _xc = _x - 150;
+	var _charge = 300 * timer_charge_down;
+	draw_set_alpha(timer_charge_down_alpha);
+	draw_healthbar(_xc, _y, _xc + _charge, _y + 15, 100, c_gray, c_yellow, c_yellow, 0, true, false);
+	draw_set_alpha(1);
+}
 _y += 32;
 scDrawText(_x, _y, string(round(100 * _tper)) + "%", c_gray, 0.5, c_dkgray);
 

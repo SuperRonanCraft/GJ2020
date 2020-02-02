@@ -1,3 +1,5 @@
-/// @desc place station
+/// @desc clear
 
-//instance_create_depth(mouse_x, mouse_y, depth + 101, oRepairStation);
+with (oSprinkler) {
+	active = !active;
+}

@@ -17,6 +17,6 @@ if(show_icon){
 		else
 			pickup_indicator_scale_open = !pickup_indicator_scale_open;
 	}
-	draw_sprite_ext(sp_pickup, floor(animationVar), x, y - 150 + scMovementWave(-10, 10, 120), pickup_indicator_scale * 3, -3, 0, c_white, 1);
+	draw_sprite_ext(sp_pickup, 0, x, y - 150 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_white, 1);
 }
 
