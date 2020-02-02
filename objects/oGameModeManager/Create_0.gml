@@ -14,8 +14,8 @@ game_win_lose = false;
 game_win_lose_sound = false;
 game_win_lose_alpha = 0;
 
-event_time_since = 0;
-event_power_lost = false;
+global.power_surge = false;
+power_surge_happened = false;
 
 hazard_spawn_timer = 0;
 hazard_spawn_timer_max = 180;

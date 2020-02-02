@@ -25,22 +25,19 @@ if (game_win_lose && !game_win_lose_sound) {
 }
 
 if (global.play) {
-	
-	if (!event_power_lost && timer / timer_max > 0.5) {
+	if (!global.power_surge && timer / timer_max > 0.5 && !power_surge_happened) {
 		with (oLight) {
 			alpha = 0.8;
 			scPlaySound(SOUND.DRAIN);
 		}
-		event_power_lost = true;
-		event_time_since = 0;
-	} else if (event_power_lost && event_time_since > 30) {
+		global.power_surge = true;
+		power_surge_happened = true;
+	} /*else if (global.power_surge && event_time_since > 30) {
 		with (oLight) {
 			if (alpha > 0)
 				alpha -= 0.01;
 		}
-	}
-	
-	event_time_since += 1/60;
+	}*/
 	
 	hazard_spawn_timer++;
 	if (hazard_spawn_timer >= hazard_spawn_timer_max) {

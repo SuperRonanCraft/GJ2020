@@ -23,8 +23,12 @@ if (show_icon) {
 			retic.active = true;
 			retic.button_text = "USE - E";
 			if (i == 4) {
-				retic.text = "FOAM CLENSE";
-				retic.desc = "10% POWER DRAIN";
+				if (!global.power_surge) {
+					retic.text = "FOAM CLENSE";
+					retic.desc = "10% POWER DRAIN";
+				} else {
+					retic.text = "RESTORE POWER";
+				}
 			}
 			retic.sprite_index = sp_pickupReticleAttention;
 			scPlaySound(SOUND.ITEM_HOVER, noone, noone, noone, 0.2);
@@ -39,7 +43,7 @@ if (show_icon) {
 		timer_charge_down = 0;
 		timer_charge_down_alpha = 0;
 	}
-} else if (instance_number(oHazardFire) >= 10) {
+} else if (instance_number(oHazardFire) >= 10 || global.power_surge) {
 	if (pulled_usable) {
 		if (pickup_indicator_scale_open) {
 			if (pickup_indicator_scale < 1)
@@ -52,8 +56,8 @@ if (show_icon) {
 			else
 				pickup_indicator_scale_open = !pickup_indicator_scale_open;
 		}
-		draw_sprite_ext(sp_attention, floor(animationVar), x + 10, y - 140 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_black, 0.8);
-		draw_sprite_ext(sp_attention, floor(animationVar), x, y - 150 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_white, 1);
+		draw_sprite_ext(sp_attention, floor(animationVar), x + 10, y - 160 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_black, 0.8);
+		draw_sprite_ext(sp_attention, floor(animationVar), x, y - 170 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_white, 1);
 	}
 }
 draw_self();

@@ -4,7 +4,7 @@ scDrawRect(RES_W - RES_W / 3, 0, RES_W, RES_H, c_black, false, 0.8);
 
 var _x = RES_W - ((RES_W / 3) / 2);
 var _y = 50;
-if (global.play) {
+if (global.play && !global.power_surge) {
 	timer += 0.1;
 }
 
