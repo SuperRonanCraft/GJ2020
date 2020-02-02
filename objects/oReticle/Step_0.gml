@@ -1,19 +1,14 @@
 /// @description  
 
-if(targetObj != noone){
-	if(!targetObj.show_icon){
-		instance_destroy();	
-	}
-}
+if (targetObj != noone)
+	if (!targetObj.show_icon)
+		instance_destroy();
 
 
-if(!active){
+if (!active)
 	visible = false;	
-}
-
-else{
+else
 	visible = true;	
-}
 
 if(active && targetObj != noone){
 	switch (reticle_id) {
@@ -36,6 +31,8 @@ if(active && targetObj != noone){
 			y = lerp(y,targetObj.bbox_bottom,0.2);
 			image_angle = 90;
 	        break;
+		default:
+			y = lerp(y, targetObj.bbox_bottom + 80, 0.2);
 	}	
 	
 }

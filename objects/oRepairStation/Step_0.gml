@@ -9,7 +9,9 @@ if (show_icon) {
 			retic.reticle_id = i;
 			retic.targetObj = id;
 			retic.active = true;
+			retic.button_text = "REPAIR - E";
 			retic.sprite_index = sp_pickupReticleAttention;
+			scPlaySound(SOUND.ITEM_HOVER, noone, noone, noone, 0.2);
 		}
 	}
 } else if (reticMade) {

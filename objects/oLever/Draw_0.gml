@@ -16,12 +16,18 @@ if (show_icon) {
 	}
 	if (!reticMade) {
 		reticMade = true;
-		for (var i = 0; i < 4; i++) {
+		for (var i = 0; i < 5; i++) {
 			var retic = instance_create_depth(x, y, depth-5, oReticle);
 			retic.reticle_id = i;
 			retic.targetObj = id;
 			retic.active = true;
+			retic.button_text = "USE - E";
+			if (i == 4) {
+				retic.text = "FOAM CLENSE";
+				retic.desc = "10% POWER DRAIN";
+			}
 			retic.sprite_index = sp_pickupReticleAttention;
+			scPlaySound(SOUND.ITEM_HOVER, noone, noone, noone, 0.2);
 		}
 	}
 	draw_sprite_ext(sp_swap, floor(animationVar), x + 10, y - 140, 3, 3, 0, c_black, 0.8);

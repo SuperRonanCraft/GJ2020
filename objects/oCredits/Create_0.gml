@@ -1,4 +1,5 @@
 /// @desc credits
+changed_gain = false;
 credits = "THANKS TO\n\n"
 	+"JOHN ROBINSON: ARTIST & PROGRAMMER\n"
 	+"ALAIN NUNEZ: PROGRAMMER\n"

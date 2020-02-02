@@ -3,9 +3,10 @@
 event_inherited();
 
 var _foaming = false;
-if (itemEquipped && !disabled) {
+if (itemEquipped && !disabled || !global.play) {
 	path_end();
-	disabled = true;
+	if (global.play)
+		disabled = true;
 } if (path_position == 1 && target != noone && instance_exists(target)) {
 	if (!hacked && global.play) {
 		var foam = instance_create_depth(x, y + 20, depth + 1, oFoam);
@@ -35,6 +36,7 @@ if (hacked && !disabled) {
 		foam.hsp = irandom_range(-1, 1);
 		foam.lifeTime = 120;
 		foam_cooldown = 0;
+		scPlaySound(SOUND.MUD, noone, noone, noone, 0.4);
 	}
 }
 

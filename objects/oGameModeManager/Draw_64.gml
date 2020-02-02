@@ -1,4 +1,5 @@
 /// @desc Game UI
+
 scDrawRect(RES_W - RES_W / 3, 0, RES_W, RES_H, c_black, false, 0.8);
 
 var _x = RES_W - ((RES_W / 3) / 2);
@@ -50,8 +51,26 @@ _y += 32;
 scDrawText(_x, _y, string(round(game_shield)) + "%", c_gray, 0.5, c_dkgray);
 
 _y += 50;
-scDrawText(_x, _y, "HEALTH", c_white, 1, c_dkgray);
+scDrawText(_x, _y, "HULL HEALTH", c_white, 1, c_dkgray);
 _y += 23;
-draw_healthbar(_x - 100, _y, _x + 100, _y + 20, game_health / 10, c_gray, c_red, c_green, 0, true, false);
+draw_healthbar(_x - 100, _y, _x + 100, _y + 20, (game_health / game_health_max) * 100, c_gray, c_red, c_green, 0, true, false);
 _y += 32;
-scDrawText(_x, _y, string(round(game_health / 10)) + "%", c_gray, 0.5, c_dkgray);
+scDrawText(_x, _y, string(round((game_health / game_health_max) * 100)) + "%", c_gray, 0.5, c_dkgray);
+
+if ((game_health / game_health_max) * 100 < 20) {
+	if (game_health_warn_fade) {
+		game_health_warn_alpha -= 0.04;
+		if (game_health_warn_alpha <= 0.4)
+			game_health_warn_fade = false;
+	} else {
+		game_health_warn_alpha += 0.04;
+		if (game_health_warn_alpha >= 1)
+			game_health_warn_fade = true;
+	}
+	scDrawText(RES_W / 3, RES_H / 3, "LOW HULL HEALTH", c_red, 1.4, c_dkgray, game_health_warn_alpha);	
+}
+
+if (game_win_lose) {
+	game_win_lose_alpha = min(game_win_lose_alpha + 0.01, 1);
+	scDrawRect(0, 0, RES_W, RES_H, c_black, false, game_win_lose_alpha);
+}

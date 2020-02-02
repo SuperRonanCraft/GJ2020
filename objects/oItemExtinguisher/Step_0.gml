@@ -17,7 +17,7 @@ if (!itemEquipped) {
 }
 if (_foaming) {
 	if (!audio_is_playing(SOUND.ENTIGUISHER_GAS))
-		scPlaySound(SOUND.ENTIGUISHER_GAS);
+		scPlaySound(SOUND.ENTIGUISHER_GAS, noone, noone, noone, 0.6);
 } else if (audio_is_playing(SOUND.ENTIGUISHER_GAS)) {
 	audio_stop_sound(SOUND.ENTIGUISHER_GAS);
 }

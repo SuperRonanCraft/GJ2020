@@ -15,10 +15,12 @@ if (game_health <= 0) { //We are dead, start animating!
 		SlideTransition(TRANS_MODE.GOTO, rWin);
 }
 if (game_win_lose && !game_win_lose_sound) {
-	if (!global.win) {
-		scPlaySound(SOUND.ALIEN, noone, noone, noone, 0.8);
-		audio_sound_gain(SOUND.ALIEN, 0, 10000);
-	}
+	with (oMusicHandler)
+		audio_stop_sound(current_sound);
+	if (!global.win)
+		scPlaySound(SOUND.GAMEOVER, noone, noone, noone, 1.4);
+	else
+		scPlaySound(SOUND.GAMEOVER_GOOD, noone, noone, noone, 0.8);
 	game_win_lose_sound = true;
 }
 

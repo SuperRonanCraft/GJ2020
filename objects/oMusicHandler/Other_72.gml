@@ -10,4 +10,5 @@ if (audio_group_is_loaded(agMusic)) {
 if (audio_group_is_loaded(agEffects))
 	audio_group_set_gain(agEffects, global.vol_sounds, 0);
 
+sound_started = true;
 event_user(0);

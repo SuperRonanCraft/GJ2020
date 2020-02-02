@@ -12,6 +12,7 @@ if (show_icon && keyboard_check_pressed(ord("E")) && pulled_usable) { //We can u
 		active = true;
 	with (oGameModeManager)
 		timer -= oGameModeManager.timer_max * other.pulled_percent_use;
+	scPlaySound(SOUND.LEVER_USE);
 }
 
 pulled_usable = (100 * (oGameModeManager.timer / oGameModeManager.timer_max)) > pulled_percent_use * 100;

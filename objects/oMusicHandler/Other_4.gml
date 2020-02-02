@@ -9,8 +9,12 @@ if (room == rMenu) {
 		audio_sound_gain(sound, global.vol_master * global.vol_music, 2000);
 		current_sound = sound;
 	}
-} else if (audio_sound_get_gain(current_sound) != global.vol_music)
-	audio_sound_gain(current_sound, global.vol_music, 500);
+} else {
+	if (instance_exists(oGameModeManager))
+		event_user(1);
+	if (audio_sound_get_gain(current_sound) != global.vol_music)
+		audio_sound_gain(current_sound, global.vol_music, 500);
+}
 alreadypausing = false;
 play_endgame = false;
 play_endgame_playing = false;

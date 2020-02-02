@@ -11,7 +11,7 @@ if(can_pickup && !itemEquipped && collision_rectangle(bbox_left,bbox_top,bbox_ri
 
 	show_icon = true;
 	
-	if(!reticMade){
+	if(!reticMade) {
 		reticMade = true;
 		for (var i = 0; i < 4; i++) {
 			var retic = instance_create_depth(x, y, depth-5,oReticle);
@@ -19,6 +19,7 @@ if(can_pickup && !itemEquipped && collision_rectangle(bbox_left,bbox_top,bbox_ri
 			retic.targetObj = id;
 			retic.active = true;
 			retic.sprite_index = pickupRetical;
+			scPlaySound(SOUND.ITEM_HOVER, noone, noone, noone, 0.2);
 		}
 	}
 	

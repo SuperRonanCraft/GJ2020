@@ -31,12 +31,19 @@ enum SOUND {
 	UI_SELECT = snSelect,
 	//MUSIC
 	MUSIC_TITLE = snMusicTitle,
-	MUSIC_1 = noone,//snMusicTitle,
-	MUSIC_2 = noone,//snMusicTitle2,
-	MUSIC_3 = noone,//snMusicTitle3,
+	MUSIC_1 = snMusic1,//snMusicTitle,
+	MUSIC_2 = snMusic1,//snMusicTitle2,
+	MUSIC_3 = snMusic1,//snMusicTitle3,
 	ENTIGUISHER_GAS = snExtinguisherGas,
 	ENTIGUISHER_GAS_BOT = snExtinguisherGasBOT,
 	DRAIN = snDrain,
 	ALARM = snAlarm,
-	ALIEN = snAlien
+	GAMEOVER = snGameover,
+	GAMEOVER_GOOD = snGameoverGood,
+	ITEM_HOVER = snItemHover,
+	ITEM_PICKUP = snItemPick,
+	LEVER_USE = snLeverUse,
+	MUD = snMud,
+	MUD_CLEAN = snMudClean,
+	MUD_CLEANING = snMudCleaning
 }
