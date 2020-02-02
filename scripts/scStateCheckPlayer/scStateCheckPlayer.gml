@@ -11,9 +11,12 @@ switch (playerState) {
 			else{
 				playerAnimState = PLAYERANIMATIONSTATE.SLIDING;	
 			}
-		} else {
-			playerAnimState = PLAYERANIMATIONSTATE.STANDING
+		} else if(hsp == 0 && standing){
+			playerAnimState = PLAYERANIMATIONSTATE.STANDING;
 			//playerAnimState = ENEMYSTATE.STANDING;	
+		}
+		else if(!standing){
+			playerAnimState = PLAYERANIMATIONSTATE.JUMPING;	
 		}
 		
         break;

@@ -7,6 +7,10 @@ switch (playerAnimState) {
     case PLAYERANIMATIONSTATE.SLIDING:
         currentSprite = sPlayer_running;
         break;
+		
+	case PLAYERANIMATIONSTATE.JUMPING:
+        currentSprite = sPlayer_jumping;
+        break;
     case PLAYERANIMATIONSTATE.STANDING:
         
 		if(!breathe){
