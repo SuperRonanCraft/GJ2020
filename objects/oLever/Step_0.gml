@@ -7,18 +7,19 @@ if (collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,oPlayer,false,
 } else
 	show_icon = false;
 	
-if (show_icon && keyboard_check_pressed(ord("E")) && pulled_usable) { //We can use!
+if (show_icon && keyboard_check_pressed(ord("E")) && (pulled_usable || global.power_surge)) { //We can use!
 	if (!global.power_surge) {
 		with (oSprinkler)
 			active = true;
 		with (oGameModeManager)
 			timer -= oGameModeManager.timer_max * other.pulled_percent_use;
 	} else {
-		global.power_surge = true;
+		global.power_surge = false;
 	}
 	scPlaySound(SOUND.LEVER_USE);
 	pulled_cooldown = pulled_cooldown_max;
 	pulled_usable = false;
+	show_icon = false;
 	sprite_index = sp_Lever_Pull;
 	image_index = 0;
 }
