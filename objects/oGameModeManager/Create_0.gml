@@ -13,6 +13,9 @@ game_end_time = 120;
 game_win_lose = false;
 game_win_lose_sound = false;
 game_win_lose_alpha = 0;
+game_win_lose_animated = false;
+game_win_lose_animated_goal = RES_W / 2;
+game_win_lose_animated_goal_reached = false;
 
 global.power_surge = false;
 power_surge_happened = false;

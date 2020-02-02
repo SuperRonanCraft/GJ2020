@@ -11,7 +11,7 @@ if (game_health <= 0) { //We are dead, start animating!
 	game_win_lose = true;
 	global.win = true;
 	game_end_time = max(game_end_time - 1, 0);
-	if (game_end_time <= 0)
+	if (game_end_time <= 0 && game_win_lose_animated)
 		SlideTransition(TRANS_MODE.GOTO, rWin);
 }
 if (game_win_lose && !game_win_lose_sound) {
