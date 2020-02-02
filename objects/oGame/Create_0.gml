@@ -25,11 +25,6 @@ global.key_p1_right_default = global.key_p1_right;
 global.key_p1_right_default = global.key_p1_down;
 
 
-//Amount of enemies to open door
-global.doorBarrageNumber = 5;
-global.cookies = 0; //Amount of cookies given
-global.cutscene_watched = true;
-
 //MUSIC LEVELS
 global.vol_master = 1;
 global.vol_music = 0.5;

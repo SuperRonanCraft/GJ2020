@@ -1,6 +1,7 @@
 /// @description  
 
 pickupIcon = noone;
+pickupRetical = sp_pickupReticle;
 
 show_icon = false;
 

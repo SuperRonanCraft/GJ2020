@@ -18,6 +18,7 @@ if(can_pickup && !itemEquipped && collision_rectangle(bbox_left,bbox_top,bbox_ri
 			retic.reticle_id = i;
 			retic.targetObj = id;
 			retic.active = true;
+			retic.sprite_index = pickupRetical;
 		}
 	}
 	

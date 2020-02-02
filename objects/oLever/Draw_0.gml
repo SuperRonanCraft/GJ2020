@@ -21,8 +21,12 @@ if (show_icon) {
 			retic.reticle_id = i;
 			retic.targetObj = id;
 			retic.active = true;
+			retic.sprite_index = sp_pickupReticleAttention;
 		}
 	}
+	draw_sprite_ext(sp_swap, floor(animationVar), x + 10, y - 140, 3, 3, 0, c_black, 0.8);
+	draw_sprite_ext(sp_swap, floor(animationVar), x, y - 150, 3, 3, 0, c_white, 1);
+	animationVar += image_speed;
 } else if (reticMade) {
 	reticMade = false;
 	with (oGameModeManager) {
@@ -42,6 +46,7 @@ if (show_icon) {
 			else
 				pickup_indicator_scale_open = !pickup_indicator_scale_open;
 		}
+		draw_sprite_ext(sp_attention, floor(animationVar), x + 10, y - 140 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_black, 0.8);
 		draw_sprite_ext(sp_attention, floor(animationVar), x, y - 150 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_white, 1);
 	}
 }

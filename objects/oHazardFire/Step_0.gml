@@ -2,10 +2,9 @@
 event_inherited();
 
 
-if(irandom_range(0,10)==1 && !extinguished){
+if (irandom_range(0,10)==1 && !extinguished){
 	//var smoke = instance_create_depth(x + irandom_range(-2,2), y-5,depth-5,oSmoke);
 }
-
 
 if(!extinguished && fire_size <= 0.5){
 	//Add remove from list script

@@ -18,5 +18,5 @@ can_pickup = false;
 path = path_add();
 py = y;
 depth = -10;
-
+pickupRetical = sp_pickupReticleAttention;
 alarm[0] = 20;

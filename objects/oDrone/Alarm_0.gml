@@ -32,7 +32,7 @@ if (target != noone) {
 		var my = (y div 64) * 64 - (32 * 3);
 		with (other) {
 			if (mp_grid_path(global.grid, path, x, y, mx, my, true))
-				path_start(path, spd, path_action_stop, false);
+				path_start(path, !hacked ? spd : spd * 0.8, path_action_stop, false);
 			if (mx > x)
 				image_xscale = -1;
 			else

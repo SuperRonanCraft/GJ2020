@@ -16,5 +16,6 @@ with (oGameModeManager) {
 		scScreenShake(50, 120, true);
 	} else { //You just got damaged
 		scScreenShake(20, 20, false);
+		
 	}
 }

@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
+var _foaming = false;
 if (itemEquipped && !disabled) {
 	path_end();
 	disabled = true;
@@ -12,15 +13,22 @@ if (itemEquipped && !disabled) {
 		var foam = instance_create_depth(x, y + 20, depth + 1, oFoam);
 		foam.hsp = irandom_range(-3, 3);
 		foam.lifeTime = 22;
+		_foaming = true;
 	} 
 } else if (!itemEquipped && disabled && !hacked) {
 	disabled = false;
 }
 
+if (_foaming) {
+	if (!audio_is_playing(SOUND.ENTIGUISHER_GAS_BOT))
+		scPlaySound(SOUND.ENTIGUISHER_GAS_BOT, noone, noone, noone, global.vol_sounds * 0.4);
+} else if (audio_is_playing(SOUND.ENTIGUISHER_GAS_BOT)) {
+	audio_stop_sound(SOUND.ENTIGUISHER_GAS_BOT);
+}
+
 
 if (hacked && !disabled) {
-	part_emitter_region(global.ParticleSystem1,global.Emitter1, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_ellipse, ps_distr_gaussian);
-	part_emitter_burst(global.ParticleSystem1,global.Emitter1, oParticleHandler.ds_part[? PARTICLES.HACKED], 1);
+	scParticleSpawn(bbox_left, bbox_right, bbox_top, bbox_bottom, oParticleHandler.ds_part[? PARTICLES.HACKED], 1);
 	can_pickup = true;
 
 	foam_cooldown++;
@@ -30,8 +38,6 @@ if (hacked && !disabled) {
 		foam.lifeTime = 120;
 		foam_cooldown = 0;
 	}
-	
-
 }
 
 if (hacked && can_pickup)

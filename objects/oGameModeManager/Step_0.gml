@@ -16,6 +16,15 @@ if (game_health <= 0) { //We are dead, start animating!
 }
 
 if (global.play) {
+	
+	if (!event_power_lost && timer / timer_max > 0.5) {
+		with (oLight) {
+			alpha = 0.8;
+			scPlaySound(SOUND.DRAIN);
+		}
+		event_power_lost = true;
+	}
+	
 	hazard_spawn_timer++;
 	if (hazard_spawn_timer >= hazard_spawn_timer_max) {
 		hazard_spawn_timer = 0;

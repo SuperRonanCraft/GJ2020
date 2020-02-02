@@ -9,6 +9,8 @@ game_health = 1000;
 game_end_time = 120;
 game_win_lose = false;
 
+event_power_lost = false;
+
 hazard_spawn_timer = 0;
 hazard_spawn_timer_max = 180;
 
@@ -29,7 +31,13 @@ instance_create_depth(xx, yy, 100, oRepairStation);
 var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
 var xx = wall.bbox_left + 32 + (((wall.bbox_right - 16) - (wall.bbox_left + 32)) * random(1));
 var yy = wall.y - 50;
-instance_create_depth(xx, yy, depth - 1, oItemExtinguisher);
+instance_create_depth(xx, yy, oPlayer.depth - 1, oItemExtinguisher);
+
+var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
+var xx = wall.bbox_left + 32 + (((wall.bbox_right - 16) - (wall.bbox_left + 32)) * random(1));
+var yy = wall.y - 50;
+instance_create_depth(xx, yy, oPlayer.depth - 1, oItemBroom);
+ds_list_destroy(walk);
 
 /*var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
 var xx = wall.bbox_left + 32 + (((wall.bbox_right - 32) - (wall.bbox_left + 32)) * random(1));

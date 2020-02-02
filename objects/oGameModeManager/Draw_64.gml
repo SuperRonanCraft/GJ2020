@@ -8,19 +8,25 @@ if (global.play) {
 }
 
 if (game_win_lose) {
-	switch (global.win) {
-		case true: //GAME WON!
-			with (oCamera) {
-				y += RES_H / 100;
-			}
-			break;
-		case false: //GAME LOST!
-			with (oCamera) {
-				y += 20;
-				angle += 0.9;
-				camera_set_view_angle(cam, angle)
-			}
+	var _done = true;
+	with (oLight) {
+		alpha = max(alpha - 0.03, 0);
+		_done = alpha <= 0;
 	}
+	if (_done)
+		switch (global.win) {
+			case true: //GAME WON!
+				with (oCamera) {
+					y += RES_H / 100;
+				}
+				break;
+			case false: //GAME LOST!
+				with (oCamera) {
+					y += 20;
+					angle += 0.9;
+					camera_set_view_angle(cam, angle)
+				}
+		}
 }
 scDrawText(_x, _y, "HYPER-DRIVE CHARGE", c_yellow, 0.75, c_dkgray);
 _y += 32;

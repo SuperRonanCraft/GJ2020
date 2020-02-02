@@ -9,6 +9,7 @@ if (show_icon) {
 			retic.reticle_id = i;
 			retic.targetObj = id;
 			retic.active = true;
+			retic.sprite_index = sp_pickupReticleAttention;
 		}
 	}
 } else if (reticMade) {
@@ -18,10 +19,8 @@ if (show_icon) {
 if (itemReparing != noone) {
 	if (instance_exists(itemReparing)) {
 		reparing_time++;
-		with (itemReparing) {
-			part_emitter_region(global.ParticleSystem1,global.Emitter1, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_ellipse, ps_distr_gaussian);
-			part_emitter_burst(global.ParticleSystem1,global.Emitter1, oParticleHandler.ds_part[?PARTICLES.REPAIR], 1);
-		}
+		with (itemReparing)
+			scParticleSpawn(bbox_left, bbox_right, bbox_top, bbox_bottom, oParticleHandler.ds_part[? PARTICLES.REPAIR], 1);
 		//REPARING PARTICLES
 		if (reparing_time >= reparing_time_max) {
 			reparing_time = 0;
@@ -30,10 +29,8 @@ if (itemReparing != noone) {
 			itemReparing.disabled = false;
 			itemReparing.hacked_cooldown = 0;
 			scRemoveWarning(itemReparing);
-			with (itemReparing) {
-				part_emitter_region(global.ParticleSystem1,global.Emitter1, bbox_left, bbox_right, bbox_top, bbox_bottom, ps_shape_ellipse, ps_distr_gaussian);
-				part_emitter_burst(global.ParticleSystem1,global.Emitter1, oParticleHandler.ds_part[?PARTICLES.FIXED], 40);
-			}
+			with (itemReparing)
+				scParticleSpawn(bbox_left, bbox_right, bbox_top, bbox_bottom, oParticleHandler.ds_part[? PARTICLES.FIXED], 40);
 			itemReparing = noone;
 			//REPARED PARTICLES
 		}
