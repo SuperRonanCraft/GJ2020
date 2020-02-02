@@ -23,12 +23,7 @@ if (show_icon) {
 			retic.active = true;
 			retic.button_text = "USE - E";
 			if (i == 4) {
-				if (!global.power_surge) {
-					retic.text = "FOAM CLENSE";
-					retic.desc = "10% POWER DRAIN";
-				} else {
-					retic.text = "RESTORE POWER";
-				}
+				retic.text = "RESTORE POWER";
 			}
 			retic.sprite_index = sp_pickupReticleAttention;
 			scPlaySound(SOUND.ITEM_HOVER, noone, noone, noone, 0.2);
