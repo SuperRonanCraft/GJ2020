@@ -20,5 +20,9 @@ if (show_icon){
 	}
 	draw_sprite_ext(sp_pickup, 0, x + 10, y - 140 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_black, 0.8);
 	draw_sprite_ext(sp_pickup, 0, x, y - 150 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_white, 1);
+} else if (itemEquipped && tool_tip_use) {
+	if (!keyboard_check(vk_space)) {
+		scDrawText(x, y + 50, "USE - SPACE", c_white, 0.7, c_dkgray, 0.6, fa_middle, fa_top);
+	}
 }
 

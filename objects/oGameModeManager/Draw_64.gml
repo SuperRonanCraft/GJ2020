@@ -18,13 +18,22 @@ if (game_win_lose) {
 		switch (global.win) {
 			case true: //GAME WON!
 				with (oCamera) {
-					y += RES_H / 120;
+					if (y >= other.game_win_lose_animated_goal_reached) {
+						y = lerp(y, -other.game_win_lose_animated_goal, 0.1);
+						if (y < -other.game_win_lose_animated_goal * 0.5)
+							other.game_win_lose_animated = true;
+					} else {
+						y = lerp(y, other.game_win_lose_animated_goal, 0.08)
+						if (y >= other.game_win_lose_animated_goal * 0.9)
+							other.game_win_lose_animated_goal_reached = true;
+						other.game_end_time = 120;
+					}
 				}
 				break;
 			case false: //GAME LOST!
 				with (oCamera) {
 					y -= 20;
-					angle += 0.7;
+					angle += 0.5;
 					camera_set_view_angle(cam, angle)
 				}
 		}
