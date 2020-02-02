@@ -20,7 +20,7 @@ var _scale = 1;
 var _scale_d = 0.8;
 var _c = c_green;
 if (!global.win) {
-	_text = "SHIP DESTORED";
+	_text = "SHIP DESTROYED";
 	_desc = "YOUR SHIP GOT LOST IN SPACE!";
 	_c = c_red;
 }

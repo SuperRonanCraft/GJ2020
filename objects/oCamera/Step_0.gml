@@ -4,7 +4,17 @@
 var _xo = random_range(-shake_remain, shake_remain);
 var _yo = random_range(-shake_remain, shake_remain);
 shake_remain = max(0, shake_remain - ((1 / shake_lenght) * shake_magnitude));
-camera_set_view_pos(cam, x + _xo, y + _yo);
+camera_set_view_pos(cam, x + _xo + shake_static_cur, y + _yo);
+
+if (shake_static_pos) {
+	shake_static_cur = min(2, shake_static_cur + shake_static_cur_change);
+	if (shake_static_cur >= 2)
+		shake_static_pos = false;
+} else {
+	shake_static_cur = max(-2, shake_static_cur - shake_static_cur_change);
+	if (shake_static_cur <= -2)
+		shake_static_pos = true;
+}
 
 //Code
 switch (keynum) {
