@@ -4,7 +4,7 @@ if (game_health <= 0) { //We are dead, start animating!
 	game_win_lose = true;
 	global.win = false;
 	game_end_time = max(game_end_time - 1, 0);
-	if (game_end_time <= 0)
+	if (game_end_time <= 0 && game_win_lose_animated)
 		SlideTransition(TRANS_MODE.GOTO, rLose);
 } else if (timer >= timer_max) {
 	global.play = false;

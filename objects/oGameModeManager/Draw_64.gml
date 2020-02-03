@@ -36,18 +36,26 @@ if (game_win_lose) {
 						if (y > _goal * 0.9)
 							other.game_win_lose_animated = true;
 					} else {
-						y = lerp(y, -other.game_win_lose_animated_goal, 0.08)
-						if (y <= -other.game_win_lose_animated_goal * 0.9)
+						y = lerp(y, -other.game_win_lose_animated_goal, 0.02)
+						if (y <= -other.game_win_lose_animated_goal * 0.81)
 							other.game_win_lose_animated_goal_reached = true;
+						else
+							scScreenShake(10, 10, true);
 						other.game_end_time = 120;
 					}
 				}
 				break;
 			case false: //GAME LOST!
 				with (oCamera) {
-					y -= 20;
-					angle += 0.5;
+					y -= 5;
+					angle -= 0.2;
 					camera_set_view_angle(cam, angle)
+					if (scMovementWave(-1, 1, 1) >= 0.9)
+						scParticleSpawn(100, (RES_W / 3 * 2) - 100, 100, RES_H - 100, PARTICLES.DAMAGE, 1);
+					if (y < RES_H / 2) {
+						other.game_win_lose_animated = true;
+						other.game_end_time = 120;
+					}
 				}
 		}
 }
@@ -90,9 +98,4 @@ if ((game_health / game_health_max) * 100 < 20) {
 			game_health_warn_fade = true;
 	}
 	scDrawText(RES_W / 3, RES_H / 3, "LOW HULL HEALTH", c_red, 1.4, c_dkgray, game_health_warn_alpha);	
-}
-
-if (game_win_lose) {
-	game_win_lose_alpha = min(game_win_lose_alpha + 0.01, 1);
-	scDrawRect(0, 0, RES_W, RES_H, c_black, false, game_win_lose_alpha);
 }

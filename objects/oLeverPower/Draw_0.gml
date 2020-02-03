@@ -38,21 +38,5 @@ if (show_icon) {
 		timer_charge_down = 0;
 		timer_charge_down_alpha = 0;
 	}
-} else if (global.power_surge) {
-	if (pulled_usable) {
-		if (pickup_indicator_scale_open) {
-			if (pickup_indicator_scale < 1)
-				pickup_indicator_scale = min(pickup_indicator_scale + pickup_indicator_scale_change, 1);
-			else
-				pickup_indicator_scale_open = !pickup_indicator_scale_open;
-		} else {
-			if (pickup_indicator_scale > 0)
-				pickup_indicator_scale = max(pickup_indicator_scale - pickup_indicator_scale_change, 0);
-			else
-				pickup_indicator_scale_open = !pickup_indicator_scale_open;
-		}
-		draw_sprite_ext(sp_attention, floor(animationVar), x + 10, y - 160 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_black, 0.8);
-		draw_sprite_ext(sp_attention, floor(animationVar), x, y - 170 + scMovementWave(-10, 10, 1), pickup_indicator_scale * 3, -3, 0, c_white, 1);
-	}
 }
 draw_self();

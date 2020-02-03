@@ -17,4 +17,7 @@ pickup_indicator_scale = 0;
 pickup_indicator_scale_open = true;
 pickup_indicator_scale_change = 0.03;
 
+power_surge_delay_max = 60 * 12;
+power_surge_delay = 0;
+
 image_speed = 0.4;

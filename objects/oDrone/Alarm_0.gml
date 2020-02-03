@@ -15,7 +15,8 @@ if (!instance_exists(target)
 				target = _tar;
 			else
 				alarm[0] = 1;
-		}
+		} else
+			target = noone;
 	}
 	else{
 		var walk = ds_list_create();
@@ -40,7 +41,9 @@ if (target != noone) {
 		var my = (y div 64) * 64 - (32 * 3);
 		with (other) {
 			if (mp_grid_path(global.grid, path, x, y, mx, my, true))
-				path_start(path, !hacked ? spd : spd * 0.8, path_action_stop, false);
+				path_start(path, !hacked ? spd : spd * 0.75, path_action_stop, false);
+			else
+				target = noone;
 			if (mx > x)
 				image_xscale = -1;
 			else
@@ -61,4 +64,5 @@ if (target != noone) {
 		}
 		other.roaming_time_crt = other.roaming_time;
 	} else
-		other.roaming_time_crt = max(other.roaming_time_crt - 1, 0);}
+		other.roaming_time_crt = max(other.roaming_time_crt - 1, 0);
+}

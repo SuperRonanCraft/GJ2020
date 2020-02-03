@@ -1,5 +1,5 @@
 event_inherited();
-spd = random_range(3 + 2, 5 + 2);
+spd = 6;
 damaging = true;
 damaging_cd_crt = 0;
 image_alpha = 1;

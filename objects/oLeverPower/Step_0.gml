@@ -22,5 +22,8 @@ if (sprite_index == sp_LeverPower_Pull) {
 		sprite_index = sp_LeverPower;
 } else {
 	pulled_cooldown = max(pulled_cooldown - 1, 0);
-	pulled_usable = pulled_cooldown <= 0;
+	pulled_usable = pulled_cooldown <= 0 && (!global.power_surge || power_surge_delay >= power_surge_delay_max);
 }
+
+if (global.power_surge)
+	power_surge_delay = min(power_surge_delay + 1, power_surge_delay_max);

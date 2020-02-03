@@ -69,7 +69,14 @@ part_type_gravity(parttype, 0.05, 270);
 part_type_alpha3(parttype, 1, 0.8, 0);
 ds_map_add(ds_part, PARTICLES.CLEAN_OIL, parttype);
 
+var parttype = part_type_create();
+part_type_sprite(parttype, sp_damage, false, false, true);
+part_type_size(parttype, 2, 2.5, 0.1, 0);
+part_type_life(parttype, 20, 40);
+part_type_alpha3(parttype, 1, 0.8, 0);
+ds_map_add(ds_part, PARTICLES.DAMAGE, parttype);
+
 
 enum PARTICLES {
-	FIRE, REPAIR, FIXED, HACKED, OIL, CLEAN, CLEAN_OIL
+	FIRE, REPAIR, FIXED, HACKED, OIL, CLEAN, CLEAN_OIL, DAMAGE
 }
