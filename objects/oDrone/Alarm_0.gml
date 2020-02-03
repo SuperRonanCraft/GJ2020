@@ -2,12 +2,20 @@
 if (disabled || itemEquipped) {
 	alarm[0] = 20;
 	exit;
-}
-if (!instance_exists(target) || (target.object_index == oHazardFire && target.extinguished) || (target.object_index == oWall && path_position == 1)) {
+} else
+	alarm[0] = 20;
+if (!instance_exists(target)
+	|| (target.object_index == oHazardFire && (target.extinguished || hacked)) 
+	|| (target.object_index == oWall && path_position == 1)) {
 	
 	if(!hacked){
-		if (instance_number(oHazardFire) > 0)
-			target = instance_find(oHazardFire, irandom_range(0, instance_number(oHazardFire) - 1));
+		if (instance_number(oHazardFire) > 0) {
+			var _tar = instance_find(oHazardFire, irandom_range(0, instance_number(oHazardFire) - 1));
+			if (_tar.fire_on && !_tar.extinguished)
+				target = _tar;
+			else
+				alarm[0] = 1;
+		}
 	}
 	else{
 		var walk = ds_list_create();
@@ -54,5 +62,3 @@ if (target != noone) {
 		other.roaming_time_crt = other.roaming_time;
 	} else
 		other.roaming_time_crt = max(other.roaming_time_crt - 1, 0);}
-
-alarm[0] = 20;

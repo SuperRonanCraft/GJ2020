@@ -21,7 +21,7 @@ global.power_surge = false;
 power_surge_happened = false;
 
 hazard_spawn_timer = 0;
-hazard_spawn_timer_max = 180;
+hazard_spawn_timer_max = 240;
 
 
 var walk = ds_list_create();

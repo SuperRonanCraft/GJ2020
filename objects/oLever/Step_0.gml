@@ -26,5 +26,5 @@ if (sprite_index == sp_Lever_Pull) {
 } else {
 	pulled_cooldown = max(pulled_cooldown - 1, 0);
 	pulled_usable = (100 * (oGameModeManager.timer / oGameModeManager.timer_max)) > pulled_percent_use * 100
-		&& pulled_cooldown <= 0;
+		&& pulled_cooldown <= 0 && !global.power_surge;
 }

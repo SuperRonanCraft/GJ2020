@@ -9,6 +9,7 @@ event_inherited();
 
 sprite_index = choose(sFire1, sFire2, sFire3);
 
+fire_on = true;
 fire_size = 1;
 fire_size_max = 1.5;
 fire_size_change = 0.02;

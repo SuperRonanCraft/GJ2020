@@ -8,6 +8,18 @@ if (global.play && !global.power_surge) {
 	timer += 0.1;
 }
 
+draw_sprite_ext(s_inventory, 0, 30, 30, 0.5, 0.5, 0, c_black, 0.8);
+draw_sprite_ext(s_inventory, 0, 20, 20, 0.5, 0.5, 0, c_white, 0.8);
+if (oPlayer.itemHeld != noone) {
+	var _spr = oPlayer.itemHeld.sprite_index
+	draw_sprite_part_ext(_spr, 0, 0, 0, sprite_get_width(_spr), sprite_get_height(_spr), 30, 25, 1, 1, c_white, 1);
+	if (!keyboard_check(vk_space))
+		scDrawText(120 + scMovementWave(-2, 2, 1), 50, "USE - SPACE", c_white, 0.5, c_dkgray, 1, fa_left, fa_middle);
+	scDrawText(60, 100, oPlayer.itemHeld.name, c_white, 0.5, c_dkgray, 1);
+} else {
+	scDrawText(120 + scMovementWave(-2, 2, 2), 50, "PICKUP AN ITEM - E", c_white, 0.5, c_dkgray, 1, fa_left);
+}
+
 if (game_win_lose) {
 	var _done = true;
 	with (oLight) {

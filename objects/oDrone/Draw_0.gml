@@ -29,7 +29,7 @@ if (hacked && !disabled) {
 		sprite_index = spDroneHacked_up;
 	else
 		sprite_index = spDroneHacked_hover;
-} else if (!disabled) {
+} else if (!disabled && !global.power_surge) {
 	if (py < y) //DOWN
 		sprite_index = spDroneActive_down
 	else if (py > y)

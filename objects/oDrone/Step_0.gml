@@ -3,18 +3,18 @@
 event_inherited();
 
 var _foaming = false;
-if (itemEquipped && !disabled || !global.play) {
+if (itemEquipped && !disabled || !global.play || global.power_surge) {
 	path_end();
 	if (global.play)
 		disabled = true;
-} if (path_position == 1 && target != noone && instance_exists(target)) {
+} if (path_position == 1 && target != noone && instance_exists(target) && !disabled) {
 	if (!hacked && global.play) {
 		var foam = instance_create_depth(x, y + 20, depth + 1, oFoam);
 		foam.hsp = irandom_range(-3, 3);
 		foam.lifeTime = 22;
 		_foaming = true;
 	} 
-} else if (!itemEquipped && disabled && !hacked) {
+} else if (!itemEquipped && disabled && (!hacked && !global.power_surge)) {
 	disabled = false;
 }
 
@@ -45,4 +45,7 @@ if (hacked && can_pickup)
 else
 	scRemoveWarning(id);
 
-hacked_cooldown = min(hacked_cooldown + 1, hacked_cooldown_max);
+if (hacked)
+	hacked_time_hacked++;
+
+hacked_cooldown = max(hacked_cooldown - 1, 0);

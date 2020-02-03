@@ -42,12 +42,8 @@ if (global.play) {
 	hazard_spawn_timer++;
 	if (hazard_spawn_timer >= hazard_spawn_timer_max) {
 		hazard_spawn_timer = 0;
-		var _hazards_list = ["fire", "hacked"]
+		var _hazards_list = ["fire"]
 		var _hazard = _hazards_list[irandom_range(0, array_length_1d(_hazards_list) - 1)];
-		if (_hazard == "hacked")
-			if (!instance_exists(oDrone) || oDrone.hacked || 
-					oDrone.hacked_cooldown < oDrone.hacked_cooldown_max || irandom(100) < 80)
-				_hazard = _hazards_list[0];
 		switch (_hazard) {
 			case "fire":
 				var walk = ds_list_create();
@@ -58,13 +54,14 @@ if (global.play) {
 							ds_list_add(walk, _wall);
 				}
 
-				var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
-
-				if (wall != noone) {
-					var xx = wall.bbox_left + ((wall.bbox_right - wall.bbox_left) * random(1));
-					var yy = wall.y;
-					if (!instance_place(xx, yy, oWall))
-						instance_create_depth(xx, yy, depth - 1, oHazardFire);
+				repeat(2) {
+					var wall = walk[| irandom_range(0, ds_list_size(walk) - 1)];
+					if (wall != noone) {
+						var xx = wall.bbox_left + ((wall.bbox_right - wall.bbox_left) * random(1));
+						var yy = wall.y;
+						if (!instance_place(xx, yy, oWall))
+							instance_create_depth(xx, yy, depth - 1, oHazardFire);
+					}
 				}
 				break;
 			case "hacked":

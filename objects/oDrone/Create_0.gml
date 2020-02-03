@@ -9,11 +9,14 @@ flash_alpha = 0;
 disabled = false;
 target = noone;
 hacked = false;
-hacked_cooldown_max = 60 * 20;
-hacked_cooldown = 60 * 10;
+hacked_cooldown_max = 60 * 5;
+hacked_cooldown = 0;
 foam_cooldown = 0;
 foam_cooldown_max = 25;
 can_pickup = false;
+hacked_interval = oGameModeManager.timer_max / 3;
+hacked_times = 1;
+hacked_time_hacked = 0;
 /// Create the path
 path = path_add();
 py = y;

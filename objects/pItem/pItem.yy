@@ -65,6 +65,20 @@
             "value": "True",
             "varName": "tool_tip_use",
             "varType": 3
+        },
+        {
+            "id": "c4a631b2-2b80-45cc-92e3-f05e88845be1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Extinguisher",
+            "varName": "name",
+            "varType": 2
         }
     ],
     "solid": false,

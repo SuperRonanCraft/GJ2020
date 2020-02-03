@@ -42,6 +42,7 @@ with (oWarnings) {
 					if (_loc[? "id"] == _id) {
 						_loc[? "x"] = xx;
 						_loc[? "y"] = yy;
+						_loc[? "ani"] = 0;
 						added = true;
 						break;
 					}

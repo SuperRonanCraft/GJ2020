@@ -29,7 +29,7 @@ if (itemReparing != noone) {
 			itemReparing.hacked = false;
 			itemReparing.can_pickup = false;
 			itemReparing.disabled = false;
-			itemReparing.hacked_cooldown = 0;
+			itemReparing.hacked_cooldown = itemReparing.hacked_cooldown_max;
 			scRemoveWarning(itemReparing);
 			with (itemReparing)
 				scParticleSpawn(bbox_left, bbox_right, bbox_top, bbox_bottom, oParticleHandler.ds_part[? PARTICLES.FIXED], 40);

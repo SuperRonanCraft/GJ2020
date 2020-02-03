@@ -31,8 +31,8 @@ if(collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,oPlayer,false,t
 draw_self();
 
 if (show_icon) {
-	draw_sprite_ext(icon, floor(animationVar), x + 10, y - 140, 3, 3, 0, c_black, 0.8);
-	draw_sprite_ext(icon, floor(animationVar), x, y - 150, 3, 3, 0, c_white, 1);
+	draw_sprite_ext(icon, floor(animationVar), x + 10, y - 160, 3, 3, 0, c_black, 0.8);
+	draw_sprite_ext(icon, floor(animationVar), x, y - 170, 3, 3, 0, c_white, 1);
 	animationVar += image_speed;
 	if (itemReparing == noone && keyboard_check_pressed(ord("E"))) {
 		var _item = oPlayer.itemHeld;

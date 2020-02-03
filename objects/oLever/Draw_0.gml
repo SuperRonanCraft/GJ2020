@@ -14,6 +14,8 @@ if (show_icon) {
 		timer_charge_down = other.pulled_percent_use;
 		timer_charge_down_alpha = other.pulled_alpha;
 	}
+	with (oSprinkler)
+		ping = true;
 	if (!reticMade) {
 		reticMade = true;
 		for (var i = 0; i < 5; i++) {
@@ -39,6 +41,8 @@ if (show_icon) {
 		timer_charge_down = 0;
 		timer_charge_down_alpha = 0;
 	}
+	with (oSprinkler)
+		ping = false;
 } else if (instance_number(oHazardFire) >= 10) {
 	if (pulled_usable) {
 		if (pickup_indicator_scale_open) {

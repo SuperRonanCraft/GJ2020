@@ -1,5 +1,7 @@
 /// @desc credits
 changed_gain = false;
+skipping = false;
+skipping_delay = 20;
 credits = 
 	"THANKS TO\n\n"
 	+"JOHN ROBINSON: ARTIST & PROGRAMMER\n"

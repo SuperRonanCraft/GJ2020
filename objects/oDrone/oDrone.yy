@@ -55,7 +55,7 @@
             "m_owner": "e0952639-5b33-40d7-8d55-d97bc264d34d"
         }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "03d25056-2baa-492e-a34c-0fe3d6c56d93",
     "overriddenProperties": [
         {
             "id": "3400f75e-4f7a-47a0-adc9-e5c17f9b0730",
@@ -64,6 +64,14 @@
             "objectId": "10abf9bd-659c-4ae6-8461-9ab12eca5df7",
             "propertyId": "8fbb7147-a156-40e0-a496-cadb3733372e",
             "value": "False"
+        },
+        {
+            "id": "5cd5ee81-427c-4cb4-9c0e-381e89373018",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "10abf9bd-659c-4ae6-8461-9ab12eca5df7",
+            "propertyId": "c4a631b2-2b80-45cc-92e3-f05e88845be1",
+            "value": "DRONE"
         }
     ],
     "parentObjectId": "10abf9bd-659c-4ae6-8461-9ab12eca5df7",
