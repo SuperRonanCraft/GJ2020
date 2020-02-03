@@ -13,8 +13,8 @@ var _color = argument[4];
 var _id = argument[5];
 var _update = argument_count > 6 ? (argument[6] != noone ? argument[6] : false) : false;
 
-var gui_width = display_get_gui_width();
-var gui_height = display_get_gui_height();
+var gui_width = RES_W;
+var gui_height = RES_H;
 
 var view_width = camera_get_view_width(view_camera[0]);
 var view_height = camera_get_view_height(view_camera[0]);
